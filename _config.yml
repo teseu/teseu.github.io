@@ -4,8 +4,7 @@ baseurl: ""
 # Site settings
 title: Teseu on GitHub
 email: teseu@tucano.net.br
-description: >
-Site pessoal para a conta do github.
+description: "Site pessoal para a conta do github."
 
 
 # Team names, titles and social links
@@ -16,7 +15,7 @@ people:
   social:
     - title: twitter
       url: #
-    - title: facebook
+    - title: lastfm
       url: #
     - title: stack-overflow
       url: #
@@ -27,7 +26,7 @@ people:
   social:
     - title: twitter
       url: #
-    - title: facebook
+    - title: youtube
       url: #
     - title: linkedin
       url: #
@@ -55,6 +54,13 @@ social:
     url: http://bitbucket.org/jekyll
   - title: github
     url: http://github.com/jekyll
+  - title: wordpress
+    url:
+  - title: lastfm
+    url:
+  - title: youtube
+    url:
+
 
 # Postal address (add as many lines as necessary)
 address:
