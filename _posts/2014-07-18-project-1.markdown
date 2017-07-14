@@ -1,15 +1,16 @@
 ---
-title: Dreams
-subtitle: Website Design
+title: Lud grávida
+subtitle: Momento muito esperado
 layout: default
 modal-id: 1
 date: 2014-07-18
-img: dreams.png
-thumbnail: dreams-thumbnail.png
+img: lud-gravida.jpg
+thumbnail: lud-gravida-t.jpg
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+project-date: Maio 2014
+client: Lud e Helena (na barriga)
+link: http://teseu.github.io
+category: Lembranças, antes
+description: Apesar de algumas dificuldades, foi muito feliz. E assim foi. Foram 10 anos para chegar nesse ponto e parecia que era exatamente isso, ansiedade e cuidado extremo.
 
 ---

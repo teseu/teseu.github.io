@@ -1,15 +1,16 @@
 ---
-title: Startup Framework
-subtitle: Website Design
+title: Descobrindo o mundo
+subtitle: Explorando e descobrindo por si a natureza
 layout: default
 modal-id: 5
 date: 2014-07-14
-img: startup-framework.png
-thumbnail: startup-framework-thumbnail.png
+img: helena-arvore.jpg
+thumbnail: helena-arvore-t.jpg
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+project-date: Janeiro 2016
+client: Helena
+link: http://teseu.github.io
+category: Lembrança, desenvolvimento
+description: Com as próprias idéias sobre exploração e descobrindo por si a natureza. Sempre curiosa. Se deixar solta, logo perde de vista.
 
 ---
