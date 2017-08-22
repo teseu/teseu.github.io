@@ -9,35 +9,33 @@ description: "Site pessoal para a conta do github."
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Ludmilla Bizzotto Petrin
   pic: 1
-  position: Lead Designer
+  position: Suporte
   social:
+    - title: facebook
+      url: #
+    - title: google-plus
+      url: #
+
+- name: Teseu
+  pic: teseu
+  position: Querendo ser Coder
+  social:
+    - title: github
+      url: #
+    - title: wordpress
+      url: #
     - title: twitter
       url: #
+
+- name: Tulio Macedo
+  pic: 3
+  position: Sou eu
+  social:
     - title: lastfm
       url: #
-    - title: stack-overflow
-      url: #
-
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
     - title: youtube
-      url: #
-    - title: linkedin
-      url: #
-
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
       url: #
     - title: google-plus
       url: #
@@ -45,15 +43,11 @@ people:
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
+    url: http://twitter.com/teseu
   - title: facebook
     url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
   - title: github
-    url: http://github.com/jekyll
+    url: http://github.com/tuliomac
   - title: wordpress
     url:
   - title: lastfm
