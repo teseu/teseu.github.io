@@ -10,7 +10,7 @@ description: "Site pessoal para a conta do github."
 # Team names, titles and social links
 people:
 - name: Ludmilla Bizzotto Petrin
-  pic: 1
+  pic: lud
   position: Suporte
   social:
     - title: facebook
@@ -30,7 +30,7 @@ people:
       url: #
 
 - name: Tulio Macedo
-  pic: 3
+  pic: tulio
   position: Sou eu
   social:
     - title: lastfm
