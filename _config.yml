@@ -5,7 +5,8 @@ baseurl: ""
 title: Teseu on GitHub
 email: teseu@tucano.net.br
 description: "Site pessoal para a conta do github."
-
+name: Teseu
+markdown: kramdown
 
 # Team names, titles and social links
 people:
