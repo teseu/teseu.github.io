@@ -1,0 +1,36 @@
+<!-- Team Section -->
+    <section id="who" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Quem?</h2>
+                    <h3 class="section-subheading text-muted">Não tem como contar tudo, mas posso mostrar uma parte</h3>
+                </div>
+            </div>
+            <div class="row">
+                {% for member in site.people %}
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
+                        <h4>{{ member.name }}</h4>
+                        <p class="text-muted">{{ member.position }}</p>
+                        <ul class="list-inline social-buttons">
+                            {% for network in member.social %}
+                            <li>
+                                <a href="{{ network.url }}" target="_blank">
+                                    <i class="fa fa-{{ network.title }}"></i>
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">A página existe porque estou aqui para editá-la, e isso só é possível com a vida que levo, por isso minha esposa tem uma foto e minha filha aparece na outra.</p>
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,68 @@
+url: https://teseu.github.io
+baseurl: ""
+
+# Site settings
+title: Teseu on GitHub
+email: teseu@tucano.net.br
+description: "Site pessoal para a conta do github."
+name: Teseu
+
+# Team names, titles and social links
+people:
+- name: Ludmilla Bizzotto Petrin
+  pic: lud
+  position: Suporte
+  social:
+    - title: facebook
+      url: https://www.facebook.com/ludmilla.bizzottopetrin
+    - title: google-plus
+      url: https://plus.google.com/u/0/117416082463406364376
+
+- name: Teseu
+  pic: teseu
+  position: Querendo ser Coder
+  social:
+    - title: github
+      url: http://github.com/tuliomac
+    - title: wordpress
+      url: http://teseu.wordpress.com
+    - title: twitter
+      url: https://twitter.com/tuliomac
+
+- name: Tulio Macedo
+  pic: tulio
+  position: Sou eu
+  social:
+    - title: lastfm
+      url: https://www.last.fm/pt/user/tuliomac
+    - title: youtube
+      url: https://www.youtube.com/channel/UCBn2huiRHKORvgpOt8NnWqA
+    - title: google-plus
+      url: https://plus.google.com/u/0/102950152378631908916
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/tuliomac
+  - title: facebook
+    url: https://www.facebook.com/tuliomac
+  - title: github
+    url: http://github.com/tuliomac
+  - title: wordpress
+    url: http://teseu.wordpress.com
+  - title: lastfm
+    url: https://www.last.fm/pt/user/tuliomac
+  - title: youtube
+    url: https://www.youtube.com/channel/UCBn2huiRHKORvgpOt8NnWqA
+  - title: google-plus
+    url: https://plus.google.com/u/0/102950152378631908916
+
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
+
+# Build settings
+markdown: kramdown
+permalink: pretty

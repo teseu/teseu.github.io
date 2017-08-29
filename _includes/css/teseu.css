@@ -1,0 +1,14 @@
+:root {
+  /*cores*/
+  --amarelo: #fed136;
+
+}
+
+.frases-box {
+  margin-bottom: 8px;
+}
+
+.modal-rodape-info {
+  font-size: 1.5rem;
+  color: var(--amarelo);
+}

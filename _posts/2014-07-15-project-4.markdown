@@ -1,0 +1,16 @@
+---
+title: Ela no meu colo
+subtitle: Isso eu queria que durasse bem mais do que parece que vai durar.
+layout: default
+modal-id: 4
+date: 2014-07-15
+img: helena-eu.jpg
+thumbnail: helena-eu-t.jpg
+alt: image-alt
+project-date: Abril 2015
+client: Helena e eu
+link: http://teseu.github.io
+category: Lembrança, saudade
+description: Na casa da avó. Sempre que possível com a família.
+
+---

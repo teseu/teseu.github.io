@@ -1,0 +1,16 @@
+---
+title: Ainda na maternidade
+subtitle: Não foi fácil, ficou na UTI, mas estava conosco.
+layout: default
+modal-id: 3
+date: 2014-07-16
+img: helena-maternidade.jpg
+thumbnail: helena-maternidade-t.jpg
+alt: image-alt
+project-date: Maio 2014
+client: Helena
+link: http://teseu.github.io
+category: Lembranças, chegada
+description: Dormindo. Muitas dificuldades foram superadas e tudo acabou bem.
+
+---
