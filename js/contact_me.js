@@ -18,7 +18,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "http://formspree.io/teseu@tucano.net.br",
                 type: "POST",
                 data: {
                     name: name,
