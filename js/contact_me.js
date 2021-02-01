@@ -18,8 +18,9 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "http://formspree.io/teseu@tucano.net.br",
-                type: "POST",
+                url: "https://formspree.io/f/meqpdowv",
+                method: "POST",
+                dataType: "json",
                 data: {
                     name: name,
                     phone: phone,

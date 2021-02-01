@@ -19,7 +19,8 @@ $(function() {
             }
             $.ajax({
                 url: "https://formspree.io/f/meqpdowv",
-                type: "POST",
+                method: "POST",
+                dataType: "json",
                 data: {
                     name: name,
                     phone: phone,
