@@ -1,10 +1,10 @@
 <script setup>
- 
+ import Social from './ui/SocialMedia.vue'
 </script>
 
 <template>
  <div class="py-8">
-  Rodapé
+  <Social />
  </div>
 </template>
 <style scoped>
