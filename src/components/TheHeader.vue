@@ -13,7 +13,7 @@ const dataContent = ref(theme.dataContent)
 <template>
   <div class="flex justify-between w-full">
     <nav class="flex flex-wrap gap-4">
-      <div class="p-3 space-y-2 bg-info-600 rounded shadow" onclick="toggleDrawer('left')">
+      <div class="p-3 space-y-2 bg-info-600 cursor-pointer rounded shadow" onclick="toggleDrawer('left')">
         <span class="block w-6 h-0.5 bg-info-1000 animate-pulse"></span>
         <span class="block w-6 h-0.5 bg-info-1000 animate-pulse"></span>
         <span class="block w-6 h-0.5 bg-info-1000 animate-pulse"></span>
