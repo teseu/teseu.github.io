@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html {
+  /* background-color: #000f0c; */
+}
+
+body {
+  /* color: #dcfef7; */
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Code', monospace;
+  font-family: 'Fira Mono', monospace;
+  font-family: 'Fira Sans', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
