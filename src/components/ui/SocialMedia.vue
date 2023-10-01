@@ -10,8 +10,8 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <div>
-    <div class="text-xl mb-4">Você pode me encontrar aqui também</div>
-    <div class="flex items-center gap-4 text-info-1000">
+    <div class="text-xl mb-3">Você pode me encontrar aqui também</div>
+    <div class="flex items-center gap-4 text-info-1050">
       <RouterLink to="https://gitlab.com/teseu" target="_blank"> <Gitlab class="w-8" /></RouterLink>
       <RouterLink to="https://github.com/teseu" target="_blank"> <Github class="w-8" /></RouterLink>
       <RouterLink to="#" target="_blank"> <Blog class="w-8" /></RouterLink>

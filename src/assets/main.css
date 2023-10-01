@@ -4,4 +4,19 @@
 @tailwind utilities;
 
 
-
+@layer base {
+  [data-theme="light"]{
+    --sira-colors-info-1050: rgb(4, 67, 136);
+    /* ... */
+  }
+  [data-theme="dark"] {
+    --sira-colors-info-1050: rgb(150, 199, 242);
+    /* ... */
+  }
+  .text-info-1050 {
+    color: var(--sira-colors-info-1050);
+  }
+  .bg-info-1050 {
+    background-color: var(--sira-colors-info-1050);
+  }
+}
