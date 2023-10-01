@@ -11,8 +11,8 @@ const dataContent = ref(theme.dataContent)
 </script>
 
 <template>
-  <div class="flex justify-between">
-    <nav class="flex flex-wrap items-center gap-4 py-4">
+  <div class="flex justify-between w-full">
+    <nav class="flex flex-wrap gap-4">
       <div class="p-3 space-y-2 bg-info-600 rounded shadow" onclick="toggleDrawer('left')">
         <span class="block w-6 h-0.5 bg-info-1000 animate-pulse"></span>
         <span class="block w-6 h-0.5 bg-info-1000 animate-pulse"></span>
@@ -26,7 +26,7 @@ const dataContent = ref(theme.dataContent)
     </nav>
     <div class="flex items-center">
       <Search />
-      <input checked class="switch ghost warn" :data-content="dataContent" type="checkbox" id="theme-toggle" onclick="toggleDarkMode()" />
+      <input checked class="switch ghost success" :data-content="dataContent" type="checkbox" id="theme-toggle" onclick="toggleDarkMode()" />
     </div>
   </div>
 </template>

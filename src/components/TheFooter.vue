@@ -3,7 +3,7 @@
 </script>
 
 <template>
- <div class="py-8">
+ <div>
   <Social />
  </div>
 </template>
