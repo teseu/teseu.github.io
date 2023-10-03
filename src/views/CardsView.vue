@@ -3,8 +3,8 @@
   import Title from '@/components/ui/TheTitle.vue'
   import Subtitle from '@/components/ui/TheSubtitle.vue'
   import Teseu from '@/assets/img/teseu.png'
-  import Vader from '@/assets/img/vader.png'
-  import Einstein from '@/assets/img/einstein.png'
+  import Vader from '@/assets/img/frases/vader.png'
+  import Einstein from '@/assets/img/frases/einstein.png'
 </script>
 <template>
   <div class="flex flex-col">
