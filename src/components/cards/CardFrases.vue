@@ -3,7 +3,7 @@
 </script>
 
 <template>
- <div class="w-80 flex items-stretch">
+ <div class="card">
       <div class="relative flex flex-col break-words w-full mb-6 shadow-lg rounded-lg bg-success-700 overflow-hidden">
         <slot name="img"></slot>
         <blockquote class="relative p-8 mb-4 text-success-50">
@@ -19,5 +19,8 @@
     </div>
 </template>
 <style scoped>
- 
+ .card {
+  @apply flex items-stretch;
+  width: clamp(10rem, 22%, 20rem);
+ }
 </style>

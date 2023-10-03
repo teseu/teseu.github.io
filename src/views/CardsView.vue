@@ -5,6 +5,7 @@
   import Teseu from '@/assets/img/teseu.png'
   import Vader from '@/assets/img/frases/vader.png'
   import Einstein from '@/assets/img/frases/einstein.png'
+  import Karlton from '@/assets/img/frases/karlton.jpg'
 </script>
 <template>
   <div class="flex flex-col">
@@ -14,7 +15,7 @@
   <Subtitle>
     <template #titulo>Algumas coisas que uso para pensar.</template>
   </Subtitle>
-  <div class="flex justify-between items-stretch">
+  <div class="flex flex-wrap justify-between gap-4 items-stretch">
     <Card>
     <template #img>
         <img alt="Teseu image" :src="Teseu" class="w-full bg-bw-500 align-middle rounded-t-lg rounded-b-none">
@@ -41,6 +42,15 @@
         Albert Einstein
       </template>
       The true definition of madness is repeating the same action, over and over, hoping for a different result.
+  </Card>
+    <Card>
+    <template #img>
+        <img alt="Phil Karlton image" :src="Karlton" class="w-full bg-bw-500 align-middle rounded-t-lg rounded-b-none">
+      </template>
+      <template #title>
+        Phil Karlton
+      </template>
+      There are only two hard things in Computer Science: cache invalidation and naming things.
   </Card>
   </div>
   </div>
