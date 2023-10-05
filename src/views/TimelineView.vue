@@ -66,6 +66,33 @@ const timelineItems = [
     "img": "test.jpg",
     "alt": "",
     "lado": "left"
+  },
+  {
+    "id": 9,
+    "data": "2018 - 2019",
+    "titulo": "De volta às interfaces",
+    "descricao": "Trabalhando de novo com interfaces, ainda sem prática, sem projetos melhores do que a versão anterior dessa mesma página, mas seguindo.",
+    "img": "web.jpg",
+    "alt": "",
+    "lado": "right"
+  },
+  {
+    "id": 10,
+    "data": "Janeiro 2020",
+    "titulo": "Muitos projetos",
+    "descricao": "Criando muitos projetos, principalmente por conta do trabalho, mas nem sempre (muitos em outros serviços de git, como GitLab).",
+    "img": "projects.jpg",
+    "alt": "",
+    "lado": "left"
+  },
+  {
+    "id": 11,
+    "data": "Setembro 2021",
+    "titulo": "Mais retornos",
+    "descricao": "Várias novas coisas, usando muito mais o terminal e ferramentas associadas.",
+    "img": "neovide.png",
+    "alt": "",
+    "lado": "right"
   }
 ]
 </script>
@@ -76,9 +103,12 @@ const timelineItems = [
         <div class="container mx-auto flex flex-col items-start md:flex-row mb-8 md:mb-16">
           <div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
             <p class="ml-2 text-sky-950 dark:text-sky-300 uppercase tracking-loose">Processo contínuo</p>
-            <p class="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">Uma timeline sobre esta página</p>
+            <p class="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">Uma timeline da página e da vida</p>
             <p class="text-sm md:text-base text-bw-80 mb-4">
               Um pequeno resumo sobre a evolução do espaço como um todo, desde quando começou e uma estimativa de para onde vai.
+            </p>
+            <p class="text-sm md:text-base text-bw-80 mb-4">
+              Algumas mudanças de rumo, minhas não só da página, carreira, enfim, coisas.
             </p>
             <div 
               class="bg-transparent mr-auto cursor-default hover:bg-sky-800 dark:hover:bg-sky-300 text-sky-950 dark:text-sky-300 hover:text-bw-200 dark:hover:text-bw-100 rounded shadow hover:shadow-lg py-2 px-4 border border-sky-800 dark:border-sky-300 hover:border-transparent">
