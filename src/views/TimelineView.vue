@@ -87,12 +87,21 @@ const timelineItems = [
   },
   {
     "id": 11,
+    "data": "Julho 2020",
+    "titulo": "Novas tecnologias",
+    "descricao": "Aprendendo e testando muitas tecnologias novas, mas nesse ponto decidi focar em Vuejs, ainda continuo.",
+    "img": "vue.svg",
+    "alt": "",
+    "lado": "right"
+  },
+  {
+    "id": 12,
     "data": "Setembro 2021",
     "titulo": "Mais retornos",
     "descricao": "Várias novas coisas, usando muito mais o terminal e ferramentas associadas.",
     "img": "neovide.png",
     "alt": "",
-    "lado": "right"
+    "lado": "left"
   }
 ]
 </script>
