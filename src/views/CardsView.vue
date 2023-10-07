@@ -18,7 +18,7 @@
   <div class="flex flex-wrap justify-between gap-4 items-stretch">
     <Card>
     <template #img>
-        <img alt="Teseu image" :src="Teseu" class="w-full bg-bw-500 align-middle rounded-t-lg rounded-b-none">
+        <img alt="Teseu image" :src="Teseu" class="w-full bg-bw-500 align-middle rounded-t-lg rounded-b-none img-card">
       </template>
       <template #title>
         Teseu
@@ -27,7 +27,7 @@
   </Card>
     <Card>
     <template #img>
-        <img alt="Darth Vader image" :src="Vader" class="w-full bg-bw-500 align-middle rounded-t-lg rounded-b-none">
+        <img alt="Darth Vader image" :src="Vader" class="w-full bg-bw-500 align-middle rounded-t-lg rounded-b-none img-card">
       </template>
       <template #title>
         Darth Vader
@@ -36,7 +36,7 @@
   </Card>
     <Card>
     <template #img>
-        <img alt="Albert Einstein image" :src="Einstein" class="w-full bg-bw-500 align-middle rounded-t-lg rounded-b-none">
+        <img alt="Albert Einstein image" :src="Einstein" class="w-full bg-bw-500 align-middle rounded-t-lg rounded-b-none img-card">
       </template>
       <template #title>
         Albert Einstein
@@ -45,7 +45,7 @@
   </Card>
     <Card>
     <template #img>
-        <img alt="Phil Karlton image" :src="Karlton" class="w-full bg-bw-500 align-middle rounded-t-lg rounded-b-none">
+        <img alt="Phil Karlton image" :src="Karlton" class="w-full bg-bw-500 align-middle rounded-t-lg rounded-b-none img-card">
       </template>
       <template #title>
         Phil Karlton
@@ -57,7 +57,13 @@
 </template>
 
 <style scoped>
-img {
+.img-card {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  /* transition: all .3s; */
 }
+
+/* .img-card:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+} */
+
 </style>

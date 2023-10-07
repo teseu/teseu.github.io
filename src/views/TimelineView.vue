@@ -110,7 +110,7 @@ const timelineItems = [
     <section>
       <div class="text-bw-1100 -mt-12 pb-8">
         <div class="container mx-auto flex flex-col items-start md:flex-row mb-8 md:mb-16">
-          <div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
+          <div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 pr-8">
             <p class="ml-2 text-sky-950 dark:text-sky-300 uppercase tracking-loose">Processo contínuo</p>
             <p class="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">Uma timeline da página e da vida</p>
             <p class="text-sm md:text-base text-bw-80 mb-4">
@@ -125,7 +125,7 @@ const timelineItems = [
           </div>
           <div class="ml-0 md:ml-12 lg:w-2/3 sticky">
             <div class="container mx-auto w-full h-full">
-              <div class="relative wrap overflow-hidden p-10 h-full">
+              <div class="relative wrap overflow-hidden px-8 py-10 h-full">
                 <div class="border-sky-700 dark:border-sky-400 absolute h-full border"
                   style="right: 50%; border-radius: 1%;"></div>
                 <div class="border-sky-700 dark:border-sky-400 absolute h-full border"
