@@ -5,12 +5,13 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="overflow-hidden rounded-lg has-shadow w-80">
+  <div class="overflow-hidden rounded-lg has-shadow w-80 relative">
     <img
       :src="'/src/assets/img/quem/' + props.featured.img"
-      class="aspect-video max-h-[19rem] rounded-b-none"
+      class="aspect-square max-h-[19rem] rounded-b-none brightness-110"
       :alt="props.featured.alt"
     />
+    <div class="skeleton wave bw max-h-[19rem] rounded-none absolute top-0" />
     <div class="p-4 flex flex-col gap-2">
       <slot name="badge"></slot>
       <h3 class="text-xl font-semibold">{{ props.featured.nome }}</h3>
@@ -23,4 +24,8 @@ const props = defineProps({
     </div>
   </div>
 </template>
-<style scoped></style>
+<style scoped>
+.skeleton {
+  opacity: 25%;
+}
+</style>
