@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 import { useThemeStore } from '@/stores/theme.js'
 import { ref } from 'vue'
 
-// import Drawer from '@/components/ui/TheDrawer.vue'
+import Drawer from '@/components/ui/TheDrawer.vue'
 // import Search from '@/components/ui/TheSearch.vue'
 
 const theme = useThemeStore()
@@ -27,7 +27,7 @@ const dataContent = ref(theme.dataContent)
       <RouterLink to="/" class="mr-8">
         <div class="w-40 h-16 logo"></div>
       </RouterLink>
-      <div class="hidden md:flex items-center gap-4 font-medium text-xl">
+      <div class="hidden md:flex items-center gap-4 font-medium text-xl capitalize">
         <RouterLink to="frases">frases</RouterLink>
         <RouterLink to="lembrancas">lembranças</RouterLink>
         <RouterLink to="sobre">sobre</RouterLink>
@@ -35,14 +35,21 @@ const dataContent = ref(theme.dataContent)
         <RouterLink to="contato">contato</RouterLink>
       </div>
     </nav>
-    <div class="flex items-center">
+    <div class="flex items-center text-3xl relative cursor-pointer toggle-theme" onclick="toggleDarkMode()"
+      id="theme-toggle">
       <!-- <Search /> -->
-      <input checked class="switch ghost success" :data-content="dataContent" type="checkbox" id="theme-toggle"
-        onclick="toggleDarkMode()" />
+      <span class="opacity-0 dark:opacity-100 toggle-theme absolute">☀️</span>
+      <span class="opacity-100 dark:opacity-0 toggle-theme absolute">🌙</span>
+      <!-- <input checked class="switch ghost success" :data-content="dataContent" type="checkbox" id="theme-toggle" -->
+      <!-- onclick="toggleDarkMode()" /> -->
     </div>
   </div>
 </template>
 <style scoped>
+.toggle-theme {
+  @apply flex transition-all duration-500 delay-75;
+}
+
 .logo {
   background-repeat: no-repeat;
   background-size: contain;
