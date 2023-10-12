@@ -1,14 +1,8 @@
 <script setup>
 import { RouterLink } from 'vue-router'
-import { useThemeStore } from '@/stores/theme.js'
-import { ref } from 'vue'
 
 import Drawer from '@/components/ui/TheDrawer.vue'
-// import Search from '@/components/ui/TheSearch.vue'
 
-const theme = useThemeStore()
-
-const dataContent = ref(theme.dataContent)
 </script>
 
 <template>
@@ -37,11 +31,8 @@ const dataContent = ref(theme.dataContent)
     </nav>
     <div class="flex items-center text-3xl relative cursor-pointer toggle-theme" onclick="toggleDarkMode()"
       id="theme-toggle">
-      <!-- <Search /> -->
       <span class="opacity-0 dark:opacity-100 toggle-theme absolute">☀️</span>
       <span class="opacity-100 dark:opacity-0 toggle-theme absolute">🌙</span>
-      <!-- <input checked class="switch ghost success" :data-content="dataContent" type="checkbox" id="theme-toggle" -->
-      <!-- onclick="toggleDarkMode()" /> -->
     </div>
   </div>
 </template>
