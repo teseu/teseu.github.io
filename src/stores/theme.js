@@ -1,19 +1,22 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
 
+
 export const useThemeStore = defineStore('theme', () => {
-  const dataContent = ref('☀')
-  const theme = ref('light')
+  const theme = ref(localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'))
+  const dataContent = ref('☀️')
+
+  if (theme.value == 'light') {
+    dataContent.value == '🌙'
+  } else {
+    dataContent.value == '☀️'
+  }
+
   function toggleDarkMode() {
     dataContent
   }
 
-  let storedTheme =
-    localStorage.getItem('theme') ||
-    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-  if (storedTheme) document.documentElement.setAttribute('data-theme', storedTheme)
 
-  console.log('theme', storedTheme)
 
-  return { dataContent, theme, storedTheme, toggleDarkMode }
+  return { dataContent, theme, toggleDarkMode }
 })
