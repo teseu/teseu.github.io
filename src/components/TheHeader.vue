@@ -29,7 +29,7 @@ import Drawer from '@/components/ui/TheDrawer.vue'
         <RouterLink to="contato">contato</RouterLink>
       </div>
     </nav>
-    <div class="flex items-center text-3xl relative cursor-pointer toggle-theme" onclick="toggleDarkMode()"
+    <div class="items-center text-3xl relative cursor-pointer toggle-theme" onclick="toggleDarkMode()"
       id="theme-toggle">
       <span class="opacity-0 dark:opacity-100 toggle-theme absolute">☀️</span>
       <span class="opacity-100 dark:opacity-0 toggle-theme absolute">🌙</span>
