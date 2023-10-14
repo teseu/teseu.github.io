@@ -5,6 +5,7 @@ import Blog from '../icons/BlogIcon.vue'
 import Mastodon from '../icons/MastodonIcon.vue'
 import Twitter from '../icons/TwitterIcon.vue'
 import Vapor from '../icons/VaporIcon.vue'
+import { PhEnvelope } from '@phosphor-icons/vue'
 </script>
 
 <template>
@@ -27,6 +28,9 @@ import Vapor from '../icons/VaporIcon.vue'
     </a>
     <a href="https://vaporhole.xyz/~teseu/" target="_blank">
       <Vapor class="w-8" />
+    </a>
+    <a href="mailto:tuliomac@proton.me" target="_blank" rel="noopener noreferrer">
+      <PhEnvelope :size="32" weight="duotone" />
     </a>
   </div>
 </div></template>
