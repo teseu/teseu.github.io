@@ -4,7 +4,7 @@ import Teseu from '@/assets/img/teseu.png'
 
 <template>
  <main>
-  <div class="flex flex-col lg:flex-row gap-8">
+  <div class="flex flex-col justify-center items-center lg:flex-row lg:justify-between gap-8">
    <img alt="Teseu logo" class="logo w-48 h-48" :src="Teseu" />
    <h1 class="flex text-4xl sm:text-5xl md:text-7xl text-info-1100 w-full justify-center items-center pb-6">Página do
     Teseu</h1>
