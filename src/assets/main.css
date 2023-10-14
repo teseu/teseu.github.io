@@ -19,4 +19,7 @@
   .bg-info-1050 {
     background-color: var(--sira-colors-info-1050);
   }
+  .border-info-1050 {
+    border-color: var(--sira-colors-info-1050);
+  }
 }
