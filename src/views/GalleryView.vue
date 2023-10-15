@@ -10,7 +10,7 @@ const gallery = [
     "href": "#",
     "class": "col-start-1 row-start-1 row-span-2",
     "class2": "object-center",
-    "src": "/src/assets/img/lembrancas/lud-gravida.jpg",
+    "src": "lud-gravida.jpg",
     "alt": "Lud grávida",
       "legend": "Gravidez"
     },
@@ -19,7 +19,7 @@ const gallery = [
     "href": "#",
     "class": "col-start-2 row-start-1 row-span-2",
     "class2": "object-top",
-    "src": "/src/assets/img/lembrancas/entrada-parto.jpg",
+    "src": "entrada-parto.jpg",
     "alt": "Lud e Tulio na entrada do centro cirúrgico, antes do parto",
       "legend": "Dia do parto"
     },
@@ -28,7 +28,7 @@ const gallery = [
     "href": "#",
     "class": "col-start-1 row-start-3 row-span-2",
     "class2": "object-center",
-    "src": "/src/assets/img/lembrancas/helena-maternidade.jpg",
+    "src": "helena-maternidade.jpg",
     "alt": "Helena na saída da maternidade",
       "legend": "Saindo da maternidade"
     },
@@ -37,7 +37,7 @@ const gallery = [
     "href": "#",
     "class": "col-start-2 row-start-3 row-span-2",
     "class2": "object-center",
-    "src": "/src/assets/img/lembrancas/helena-eu.jpg",
+    "src": "helena-eu.jpg",
     "alt": "Helena no colo do Túlio em frente à casa da avó",
       "legend": "Visitando vovó"
     },
@@ -46,7 +46,7 @@ const gallery = [
     "href": "#",
     "class": "col-start-1 row-start-5 row-span-2",
     "class2": "object-top",
-    "src": "/src/assets/img/lembrancas/helena-eu-2.jpg",
+    "src": "helena-eu-2.jpg",
     "alt": "Selfie de Tulio com Helena no colo",
       "legend": "Selfie"
     },
@@ -55,7 +55,7 @@ const gallery = [
     "href": "#",
     "class": "col-start-2 row-start-5",
     "class2": "object-top",
-    "src": "/src/assets/img/lembrancas/helena-arvore.jpg",
+    "src": "helena-arvore.jpg",
     "alt": "Helena explorando o mundo, ao lado de um árvore",
       "legend": "Explorando o mundo"
     },
@@ -64,7 +64,7 @@ const gallery = [
     "href": "#",
     "class": "col-start-2 row-start-9",
     "class2": "object-center",
-    "src": "/src/assets/img/lembrancas/nos-selfie-2.jpg",
+    "src": "nos-selfie-2.jpg",
     "alt": "Selfie com Lud, Helena e Tulio",
       "legend": "Na escola"
     },
@@ -73,7 +73,7 @@ const gallery = [
     "href": "#",
     "class": "col-start-1 row-start-8",
     "class2": "object-top",
-    "src": "/src/assets/img/lembrancas/nos-selfie.jpg",
+    "src": "nos-selfie.jpg",
     "alt": "Selfie com Lud, Helena e Tulio",
       "legend": "Saindo pra jantar"
     },
@@ -82,7 +82,7 @@ const gallery = [
     "href": "#",
     "class": "col-start-2 row-start-7 row-span-2",
     "class2": "object-bottom",
-    "src": "/src/assets/img/lembrancas/charrete.jpg",
+    "src": "charrete.jpg",
     "alt": "Helena e Tulio em um passeio de charrete",
       "legend": "Passeio de charrete"
     },
@@ -91,7 +91,7 @@ const gallery = [
     "href": "#",
     "class": "col-start-1 row-start-7",
     "class2": "object-top",
-    "src": "/src/assets/img/lembrancas/ano-novo2020.png",
+    "src": "ano-novo2020.png",
     "alt": "Foto de comemoração do ano novo de 202 com Helena, Lud e Tulio",
       "legend": "Ano novo de 2020"
     },
@@ -100,7 +100,7 @@ const gallery = [
     "href": "#",
     "class": "col-start-1 row-start-9 row-span-2",
     "class2": "object-bottom",
-    "src": "/src/assets/img/lembrancas/trem-fantasma.jpg",
+    "src": "trem-fantasma.jpg",
     "alt": "Selfie com Helena e Tulio na entrada do trem fantasma",
       "legend": "Medo do trem fantasma"
     },
@@ -109,7 +109,7 @@ const gallery = [
     "href": "#",
     "class": "col-start-2 row-start-9 row-span-2",
     "class2": "object-top",
-    "src": "/src/assets/img/lembrancas/pais.jpg",
+    "src": "pais.jpg",
     "alt": "Helena entregando a Tulio presente do dia dos pais",
       "legend": "Dia dos pais na escola"
     }

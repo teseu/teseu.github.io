@@ -15,7 +15,7 @@ const props = defineProps({
         {{ props.timelineItem.descricao }}
       </p>
     </div>
-    <img class="rounded-[2rem] relative" :class="props.timelineItem.lado + '-4'" :src="'/src/assets/img/timeline/' + props.timelineItem.img" :alt="props.timelineItem.alt">
+    <img class="rounded-[2rem] relative" :class="props.timelineItem.lado + '-4'" :src="'https://github.com/teseu/teseu.github.io/blob/vue/docs/assets/img/timeline/' + props.timelineItem.img + '?raw=true'" :alt="props.timelineItem.alt">
   </div>
 </template>
 <style scoped>
