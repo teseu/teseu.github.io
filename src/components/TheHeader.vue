@@ -2,6 +2,7 @@
 import { RouterLink } from 'vue-router'
 
 import Drawer from '@/components/ui/TheDrawer.vue'
+import Theme from '@/components/icons/ThemeSwitch.vue'
 
 </script>
 
@@ -22,25 +23,17 @@ import Drawer from '@/components/ui/TheDrawer.vue'
         <div class="w-40 h-16 logo"></div>
       </RouterLink>
       <div class="hidden md:flex items-center gap-4 font-medium text-xl capitalize">
-        <RouterLink to="frases">frases</RouterLink>
-        <RouterLink to="lembrancas">lembranças</RouterLink>
-        <RouterLink to="sobre">sobre</RouterLink>
-        <RouterLink to="quem">quem</RouterLink>
-        <RouterLink to="contato">contato</RouterLink>
+        <RouterLink class="text-info-1100" to="frases">frases</RouterLink>
+        <RouterLink class="text-info-1100" to="lembrancas">lembranças</RouterLink>
+        <RouterLink class="text-info-1100" to="sobre">sobre</RouterLink>
+        <RouterLink class="text-info-1100" to="quem">quem</RouterLink>
+        <RouterLink class="text-info-1100" to="contato">contato</RouterLink>
       </div>
     </nav>
-    <div class="items-center text-3xl relative cursor-pointer toggle-theme" onclick="toggleDarkMode()"
-      id="theme-toggle">
-      <span class="opacity-0 dark:opacity-100 toggle-theme absolute">☀️</span>
-      <span class="opacity-100 dark:opacity-0 toggle-theme absolute">🌙</span>
-    </div>
+    <Theme />
   </div>
 </template>
 <style scoped>
-.toggle-theme {
-  @apply flex transition-all duration-500 delay-75;
-}
-
 .logo {
   background-repeat: no-repeat;
   background-size: contain;

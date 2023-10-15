@@ -14,9 +14,9 @@ import Footer from '@/components/TheFooter.vue'
       </header>
     </div>
     <div class="flex flex-col relative z-10 top-20">
-      <RouterView class="px-8 md:px-16 xl:px-[20rem] pt-8 pb-8 bg-info-200 top-20 text-bw-900 min-h-[calc(100vh-10rem)]"
+      <RouterView class="px-8 md:px-16 xl:px-[20rem] pt-8 pb-8 bg-info-200 top-20 text-bw-900 min-h-[calc(100vh-11rem)]"
         onclick="closeDrawer('left')" />
-      <footer v-if="$route.name != 'card'" class="w-full px-8 md:px-16 xl:px-[20rem] bg-info-100 h-20">
+      <footer v-if="$route.name != 'card'" class="w-full px-8 md:px-16 xl:px-[20rem] bg-info-100 h-24">
         <div>
           <Footer />
         </div>

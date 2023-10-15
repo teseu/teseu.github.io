@@ -4,7 +4,7 @@ import Social from './ui/SocialMedia.vue'
 
 <template>
  <div>
-  <div class="text-xl mb-3">Você pode me encontrar aqui também</div>
+  <div class="text-info-1100 text-xl my-3">Você pode me encontrar aqui também</div>
   <Social />
  </div>
 </template>
