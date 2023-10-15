@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" class="dark" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Fira+Mono:wght@500;700&family=Fira+Sans+Condensed:wght@100;400;600&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Página do Teseu</title>
+  <script type="module" crossorigin src="/assets/index-d403eb33.js"></script>
+  <link rel="stylesheet" href="/assets/index-f36e4fcb.css">
+</head>
+
+<body class="bg-info-200 min-h-screen">
+  <div id="app"></div>
+  
+  <script>
+    const html = document.querySelector('html')
+
+    var storedTheme =
+      localStorage.getItem('theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+    if (storedTheme) document.documentElement.setAttribute('data-theme', storedTheme)
+    let currentTheme = document.documentElement.getAttribute('data-theme')
+
+    if (currentTheme == 'dark') {
+      html.classList.add('dark')
+      //      currentTheme.setAttribute('data-theme', 'dark')
+      //      document.getElementById('theme-toggle').checked = false 
+    } else {
+      html.classList.remove('dark')
+      //     currentTheme.setAttribute('data-theme', 'light')
+    }
+
+    function toggleDarkMode() {
+
+      let currentTheme = document.documentElement.getAttribute('data-theme')
+      var targetTheme = 'light'
+
+      const toggle = document.querySelector('#theme-toggle')
+      if (currentTheme === 'light') {
+        targetTheme = 'dark'
+        html.classList.add('dark')
+        toggle.setAttribute('data-content', '☀️')
+      } else {
+        html.classList.remove('dark')
+        toggle.setAttribute('data-content', '🌙')
+      }
+      console.debug('toggleDarkMode', targetTheme)
+      document.documentElement.setAttribute('data-theme', targetTheme)
+      localStorage.setItem('theme', targetTheme)
+    }
+  </script>
+  <script>
+    function toggleDrawer(name) {
+      let ele = document.getElementById(`drawer-${name}`)
+      console.debug('toggleDrawer', name, ele)
+      let show = ele.classList.contains('show')
+      if (show) {
+        ele.classList.remove('show')
+      } else {
+        ele.classList.add('show')
+      }
+    }
+    function closeDrawer(name) {
+      let ele = document.getElementById(`drawer-${name}`)
+      console.debug('closeDrawer', name, ele)
+      let show = ele.classList.contains('show')
+      if (show) {
+        ele.classList.remove('show')
+      }
+    }
+  </script>
+</body>
+
+</html>
