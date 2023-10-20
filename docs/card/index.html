@@ -4414,7 +4414,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             <div data-v-9e5eee7e="" class="flex gap-8">
               <div data-v-195dca16="" data-v-9e5eee7e=""
                 class="w-40 items-center text-3xl relative cursor-pointer toggle-theme" onclick="toggleDarkMode()"
-                id="theme-toggle" data-content="☀️"><span data-v-195dca16=""
+                id="theme-toggle"><span data-v-195dca16=""
                   class="opacity-0 dark:opacity-100 toggle-theme absolute">☀️</span><span data-v-195dca16=""
                   class="opacity-100 dark:opacity-0 toggle-theme absolute">🌙</span></div>
               <div data-v-9e5eee7e="" class="flex gap-8 text-5xl transition-all duration-300">
@@ -4431,8 +4431,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             <div data-v-9e5eee7e="">
               <h2 class="text-info-1050 text-2xl mb-6">
                 <div data-v-9e5eee7e="" class="transition-all duration-300 delay-150">
-                  <div data-v-9e5eee7e="" style=""> Desenvolvedor Web, entusiasta do Software Livre, usuário Fedora
-                  </div>
+                  <div data-v-9e5eee7e=""> Desenvolvedor Web, entusiasta do Software Livre, usuário Fedora </div>
                   <div data-v-9e5eee7e="" style="display: none;"> Web Developer, Free software enthusiast, Fedora user
                   </div>
                 </div>
@@ -4440,8 +4439,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             </div>
           </div>
           <div data-v-9e5eee7e="" class="py-8"><img data-v-9e5eee7e=""
-              class="w-48 h-48 rounded-full object-cover object-top" src="/src/assets/img/quem/tulio-profile.png"
-              alt="Tulio"></div>
+              class="w-48 h-48 rounded-full object-cover object-top" src="/img/quem/tulio-profile.png" alt="Tulio">
+          </div>
           <div data-v-9e5eee7e="">
             <div data-v-9e5eee7e="">
               <div class="flex items-center gap-4 text-info-1050"><a href="https://gitlab.com/teseu"
@@ -4496,11 +4495,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                   </svg></a></div>
             </div>
           </div>
-        </div><!--v-if-->
+        </div>
       </div>
     </div>
   </div>
-  <script type="module" src="/src/main.js?t=1697821147644"></script>
+  <script type="module" src="/src/main.js"></script>
   <script>
     const html = document.querySelector('html')
 
@@ -4512,11 +4511,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
     if (currentTheme == 'dark') {
       html.classList.add('dark')
-      //      currentTheme.setAttribute('data-theme', 'dark')
-      //      document.getElementById('theme-toggle').checked = false 
     } else {
       html.classList.remove('dark')
-      //     currentTheme.setAttribute('data-theme', 'light')
     }
 
     function toggleDarkMode() {
@@ -4538,30 +4534,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
       localStorage.setItem('theme', targetTheme)
     }
   </script>
-  <script>
-    function toggleDrawer(name) {
-      let ele = document.getElementById(`drawer-${name}`)
-      console.debug('toggleDrawer', name, ele)
-      let show = ele.classList.contains('show')
-      if (show) {
-        ele.classList.remove('show')
-      } else {
-        ele.classList.add('show')
-      }
-    }
-    function closeDrawer(name) {
-      let ele = document.getElementById(`drawer-${name}`)
-      console.debug('closeDrawer', name, ele)
-      let show = ele.classList.contains('show')
-      if (show) {
-        ele.classList.remove('show')
-      }
-    }
-  </script>
-
-
-
-  <vite-error-overlay></vite-error-overlay>
-</body>
+ </body>
 
 </html>
