@@ -32,10 +32,10 @@ const languagePTBR = ref(true)
       <Subtitle>
         <template #titulo>
         <div class="transition-all duration-300 delay-150">
-          <div v-show="languagePTBR">
+          <div class="msgm" :class="{ inactiveLanguage: !languagePTBR }">
             Desenvolvedor Web, entusiasta do Software Livre, usuário Fedora
           </div>
-          <div v-show="!languagePTBR">
+          <div class="msgm" :class="{ inactiveLanguage: languagePTBR }">
             Web Developer, Free software enthusiast, Fedora user
           </div>
         </div>
@@ -43,7 +43,7 @@ const languagePTBR = ref(true)
       </Subtitle>
     </div>
     <div class="py-8">
-      <img class="w-48 h-48 rounded-full object-cover object-top" src="@/assets/img/quem/tulio-profile.png" alt="Tulio">
+      <img class="w-48 h-48 rounded-full object-cover object-top" src="/img/quem/tulio-profile.png" alt="Tulio">
     </div>
     <div>
       <Social />
@@ -57,5 +57,9 @@ const languagePTBR = ref(true)
 
 .active {
   @apply bg-info-600 rounded-xl w-full h-1;
+}
+
+.inactiveLanguage {
+  display: none;
 }
 </style>

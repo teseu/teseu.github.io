@@ -27,11 +27,8 @@
 
     if (currentTheme == 'dark') {
       html.classList.add('dark')
-      //      currentTheme.setAttribute('data-theme', 'dark')
-      //      document.getElementById('theme-toggle').checked = false 
     } else {
       html.classList.remove('dark')
-      //     currentTheme.setAttribute('data-theme', 'light')
     }
 
     function toggleDarkMode() {
@@ -54,6 +51,13 @@
     }
   </script>
   <script>
+    const msgm = document.querySelectorAll('.msgm')
+
+    function toggleLanguage() {
+      
+    }
+  </script>
+  <script>
     function toggleDrawer(name) {
       let ele = document.getElementById(`drawer-${name}`)
       console.debug('toggleDrawer', name, ele)
@@ -72,7 +76,7 @@
         ele.classList.remove('show')
       }
     }
-  </script>
+    </script>
 </body>
 
 </html>
