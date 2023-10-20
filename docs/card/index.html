@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="" data-theme="light">
+<html lang="en" class="dark" data-theme="dark">
 
 <head>
   <script type="module" src="/@vite/client"></script>
@@ -13,7 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&amp;family=Fira+Mono:wght@500;700&amp;family=Fira+Sans+Condensed:wght@100;400;600&amp;family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
     rel="stylesheet">
   <title>Página do Teseu</title>
-  <style type="text/css">
+  <style type="text/css" data-vite-dev-id="/home/tulio/workspace/teseu/teseu.github.io/src/assets/main.css">
     *,
     *::before,
     *::after {
@@ -2318,7 +2318,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
     }
 
     .prompt:has(.icon):has(.title):has(.content) {
-      grid-template-areas: "icon title""icon content";
+      grid-template-areas: "icon title" "icon content";
       grid-template-columns: auto 1fr;
     }
 
@@ -2333,7 +2333,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
     }
 
     .prompt:not(:has(.icon)):has(.title):has(.content) {
-      grid-template-areas: "title""content";
+      grid-template-areas: "title" "content";
     }
 
     .prompt:not(:has(.icon)):not(:has(.title)):has(.content) {
@@ -4405,8 +4405,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 <body class="bg-info-200 min-h-screen">
   <div id="app" data-v-app="">
-    <div class="flex flex-col">
-      <!--v-if-->
+    <div class="flex flex-col"><!--v-if-->
       <div class="flex flex-col relative z-10 top-20">
         <div data-v-9e5eee7e=""
           class="flex flex-col items-center px-8 md:px-16 xl:px-[20rem] pt-8 pb-8 bg-info-200 top-20 text-bw-900 min-h-[calc(100vh-11rem)]"
@@ -4415,7 +4414,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             <div data-v-9e5eee7e="" class="flex gap-8">
               <div data-v-195dca16="" data-v-9e5eee7e=""
                 class="w-40 items-center text-3xl relative cursor-pointer toggle-theme" onclick="toggleDarkMode()"
-                id="theme-toggle"><span data-v-195dca16=""
+                id="theme-toggle" data-content="☀️"><span data-v-195dca16=""
                   class="opacity-0 dark:opacity-100 toggle-theme absolute">☀️</span><span data-v-195dca16=""
                   class="opacity-100 dark:opacity-0 toggle-theme absolute">🌙</span></div>
               <div data-v-9e5eee7e="" class="flex gap-8 text-5xl transition-all duration-300">
@@ -4432,7 +4431,8 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             <div data-v-9e5eee7e="">
               <h2 class="text-info-1050 text-2xl mb-6">
                 <div data-v-9e5eee7e="" class="transition-all duration-300 delay-150">
-                  <div data-v-9e5eee7e=""> Desenvolvedor Web, entusiasta do Software Livre, usuário Fedora </div>
+                  <div data-v-9e5eee7e="" style=""> Desenvolvedor Web, entusiasta do Software Livre, usuário Fedora
+                  </div>
                   <div data-v-9e5eee7e="" style="display: none;"> Web Developer, Free software enthusiast, Fedora user
                   </div>
                 </div>
@@ -4440,7 +4440,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
             </div>
           </div>
           <div data-v-9e5eee7e="" class="py-8"><img data-v-9e5eee7e=""
-              class="w-48 h-48 rounded-full object-cover object-top" src="../assets/img/quem/tulio-profile.png"
+              class="w-48 h-48 rounded-full object-cover object-top" src="/src/assets/img/quem/tulio-profile.png"
               alt="Tulio"></div>
           <div data-v-9e5eee7e="">
             <div data-v-9e5eee7e="">
@@ -4496,12 +4496,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                   </svg></a></div>
             </div>
           </div>
-        </div>
-        <!--v-if-->
+        </div><!--v-if-->
       </div>
     </div>
   </div>
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/main.js?t=1697821147644"></script>
   <script>
     const html = document.querySelector('html')
 
@@ -4550,7 +4549,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         ele.classList.add('show')
       }
     }
-
     function closeDrawer(name) {
       let ele = document.getElementById(`drawer-${name}`)
       console.debug('closeDrawer', name, ele)
@@ -4563,6 +4561,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 
 
+  <vite-error-overlay></vite-error-overlay>
 </body>
 
 </html>
