@@ -7,7 +7,7 @@ const props = defineProps({
 <template>
   <div class="overflow-hidden rounded-lg has-shadow w-80 relative">
     <img
-      :src="'https://github.com/teseu/teseu.github.io/blob/vue/docs/assets/img/quem/' + props.featured.img + '?raw=true'"
+      :src="'/img/quem/' + props.featured.img"
       class="aspect-square max-h-[19rem] rounded-b-none brightness-110"
       :alt="props.featured.alt"
     />

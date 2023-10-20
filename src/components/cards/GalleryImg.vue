@@ -7,7 +7,7 @@ const props = defineProps({
 
 <template>
   <a :href="props.galleryItem.href" :class="props.galleryItem.class" class="group link">
-    <img :src="'https://github.com/teseu/teseu.github.io/blob/vue/docs/assets/img/lembrancas/' + props.galleryItem.src + '?raw=true'" loading="lazy" :alt="props.galleryItem.alt" class="img" :class="props.galleryItem.class2" />
+    <img :src="'/img/lembrancas/' + props.galleryItem.src" loading="lazy" :alt="props.galleryItem.alt" class="img" :class="props.galleryItem.class2" />
 
     <div class="img-div">
     </div>
