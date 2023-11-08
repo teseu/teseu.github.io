@@ -1,13 +1,21 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Navbar from '../components/Navbar.astro';
+import Layout from '../layouts/Layout.astro'
+import Card from '@components/Card.astro'
+import Navbar from '@components/Navbar.astro'
+import { Image } from 'astro:assets'
+import Teseu from '@assets/img/teseu.png'
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		
-		<Navbar />
+		<div class="w-full">
+			<Navbar />
+		</div>
+		<main class="bg-info-200 top-20 text-bw-900 pt-20">
+			<div class="flex flex-col justify-center items-center lg:flex-row lg:justify-between gap-8 px-8 md:px-16 xl:px-[20rem] pt-8 pb-8 min-h-[calc(100vh-2rem)] hero">
+				<Image alt="Teseu logo" class="w-48 h-48" src={Teseu} />
+				<h1 class="flex text-4xl sm:text-5xl md:text-7xl text-info-1100 w-full justify-center items-center pb-6">Página do
+				 Teseu</h1>
+			 </div>
 		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
@@ -35,18 +43,10 @@ import Navbar from '../components/Navbar.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
-	</main>
+		</main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		font-size: 20px;
-		line-height: 1.6;
-	}
 	.astro-a {
 		position: absolute;
 		top: -32px;

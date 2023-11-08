@@ -1,34 +1,56 @@
 ---
-
+import Theme from '@components/ThemeSwitch.astro'
 ---
 
-<script is:inline>
-  // ☝️ This script prevent the FART effect.
-  if (localStorage.getItem('theme') === null) {
-    document.documentElement.setAttribute('data-theme', 'night')
-  } else document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'))
-  // "theme" LocalStorage value is set by the package to remember user preference.
-  // The value is checked and applyed before rendering anything.
-</script>
-<script>
-  import { themeChange } from 'theme-change'
-  themeChange()
-  // 👆 you could import the CDN directly instead of these two lines
-</script>
-<nav id="navbar" class="pt-4">
-  <div class="flex gap-4 pt-4 px-4 w-max">
-    <div class="text-xl rounded-lg px-4">Tema</div>
-    <button class="rounded-xl w-32 btn glass" data-set-theme="emerald" data-act-class="ACTIVECLASS">
-      <span class="text-2xl"> 🌞</span>
-       Light
-    </button>
-    <button class="rounded-xl w-32 btn glass" data-set-theme="business" data-act-class="ACTIVECLASS">
-      <span class="text-2xl"> 🌑</span>
-       Dark
-    </button>
-    <button class="rounded-xl w-32 btn glass" data-set-theme="night" data-act-class="ACTIVECLASS">
-      <span class="text-2xl"> 🌙</span>
-       Night
-    </button>
+<div class="drawer fixed">
+  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content flex flex-col w-full">
+    <!-- Navbar -->
+    <div class="w-full navbar justify-between">
+      <div class="flex-none xl:hidden">
+        <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </label>
+      </div>
+      <div class="flex px-2 mx-2">
+        <a href="/">
+          <div class="w-40 h-16 logo"></div>
+        </a>
+      </div>
+      <div class="hidden xl:flex justify-between w-full">
+        <Theme flexCol="" />
+        <ul class="menu menu-horizontal">
+          <!-- Navbar menu content here -->
+          <li><a href="#frases" class="text-primary text-lg">Frases</a></li>
+          <li><a href="#lembrancas" class="text-primary text-lg">Lembranças</a></li>
+          <li><a href="#sobre" class="text-primary text-lg">Sobre</a></li>
+          <li><a href="#quem" class="text-primary text-lg">Quem</a></li>
+          <li><a href="#contato" class="text-primary text-lg">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+
   </div>
-</nav>
+  <div class="drawer-side">
+    <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu p-4 w-80 min-h-full bg-base-200">
+      <div class="py-4">
+        <div class="text-secondary text-lg px-4 pb-4">Tema</div>
+        <Theme flexCol="flex-col" />
+      </div>
+      <!-- Sidebar content here -->
+      <li><a href="#frases" class="text-primary text-lg">Frases</a></li>
+      <li><a href="#lembrancas" class="text-primary text-lg">Lembranças</a></li>
+      <li><a href="#sobre" class="text-primary text-lg">Sobre</a></li>
+      <li><a href="#quem" class="text-primary text-lg">Quem</a></li>
+      <li><a href="#contato" class="text-primary text-lg">Contato</a></li>
+    </ul>
+  </div>
+</div>
+<style>
+.logo {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+</style>

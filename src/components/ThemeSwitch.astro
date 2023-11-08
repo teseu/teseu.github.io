@@ -1,0 +1,39 @@
+---
+const { flexCol } = Astro.props
+---
+
+<script is:inline>
+  // ☝️ This script prevent the FART effect.
+  if (localStorage.getItem('theme') === null) {
+    document.documentElement.setAttribute('data-theme', 'night')
+  } else document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'))
+  // "theme" LocalStorage value is set by the package to remember user preference.
+  // The value is checked and applyed before rendering anything.
+</script>
+<script>
+  import { themeChange } from 'theme-change'
+  themeChange()
+  // 👆 you could import the CDN directly instead of these two lines
+</script>
+<nav id="navbar">
+  <div class:list={[ 'flex gap-4 px-4 w-max', { flexCol } ]}>
+    <button class="rounded-xl w-32 btn glass" data-set-theme="emerald" data-act-class="ACTIVECLASS">
+      <span class="text-2xl"> 🌞</span>
+       Light
+    </button>
+    <button class="rounded-xl w-32 btn glass" data-set-theme="business" data-act-class="ACTIVECLASS">
+      <span class="text-2xl"> 🌑</span>
+       Dark
+    </button>
+    <button class="rounded-xl w-32 btn glass" data-set-theme="night" data-act-class="ACTIVECLASS">
+      <span class="text-2xl"> 🌙</span>
+       Night
+    </button>
+  </div>
+</nav>
+
+<style>
+  .flexCol {
+    flex-direction: column;
+  }
+</style>
