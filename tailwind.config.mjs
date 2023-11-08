@@ -8,8 +8,8 @@ export default {
 	daisyui: {
     themes: [
       {
-        dark: {
-          ...require('daisyui/src/theming/themes')['[data-theme=dark]'],
+        business: {
+          ...require('daisyui/src/theming/themes')['[data-theme=business]'],
           '.bg-color-1': {
             'background-color': '#1f2937'
           },
@@ -22,8 +22,8 @@ export default {
             'background-color': 'var(--primary-dark)'
           }
         },
-        corporate: {
-          ...require('daisyui/src/theming/themes')['[data-theme=corporate]'],
+        emerald: {
+          ...require('daisyui/src/theming/themes')['[data-theme=emerald]'],
           '.bg-color-1': {
             'background-color': '#f1f5f9'
           },
