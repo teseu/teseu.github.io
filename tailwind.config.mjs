@@ -13,7 +13,7 @@ export default {
           '.bg-color-1': {
             'background-color': '#1f2937',
           },
-          primary: '#a5b4fc',
+          primary: '#7c89ff',
           '--primary-dark': '#312e81',
           '.text-primary-dark': {
             color: 'var(--primary-dark)',
@@ -27,6 +27,7 @@ export default {
           '.bg-color-1': {
             'background-color': '#f1f5f9',
           },
+          primary: '#079038',
           '--primary-dark': '#001c9b',
           '.text-primary-dark': {
             color: 'var(--primary-dark)',
