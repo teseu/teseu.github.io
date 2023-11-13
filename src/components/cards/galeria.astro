@@ -3,7 +3,7 @@
 const { classLink, link, caption  } = Astro.props
 ---
 
-  <a href={link} class={ classLink } >
+  <a href={link} class:list={["group link", classLink ]} >
     <slot name="img" /> 
     <div class="legend">{caption}</div>
   </a>
