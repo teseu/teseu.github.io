@@ -1,12 +1,26 @@
 ---
 import { Image } from 'astro:assets'
+import Theme from '@components/ThemeSwitch.astro'
 import Layout from '../layouts/LayoutCard.astro'
 import Title from '@components/ui/Title.astro'
 import Subtitle from '@components/ui/Subtitle.astro'
-
+const languagePTBR = true
 ---
 <Layout title='Cartão de visitas do Teseu'>
-  <div class="flex flex-col px-8 py-4 md:px-16 xl:px-[20rem] min-h-[calc(100vh-13rem)]">
+  <div class="flex flex-col px-8 md:px-16 xl:px-[20rem] min-h-[calc(100vh-13rem)]">
+    <div class="flex gap-8 py-4">
+      <Theme />
+      <div class="flex gap-8 text-5xl transition-all duration-300" @click="languagePTBR = !languagePTBR">
+        <div class="toggle-language">
+          🇧🇷
+          <span :class="{ active: languagePTBR }"></span>
+        </div>
+        <div class="toggle-language">
+          🇺🇸
+          <span :class="{ active: !languagePTBR }"></span>
+        </div>
+      </div>
+    </div>
     <Title title='Tulio Macedo' />
     <Subtitle title='Desenvolvedor Web, entusiasta do Software Livre, usuário Fedora' />
     
