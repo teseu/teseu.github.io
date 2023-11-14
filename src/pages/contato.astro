@@ -3,13 +3,51 @@ import { Image } from 'astro:assets'
 import Layout from '../layouts/Layout.astro'
 import Title from '@components/ui/Title.astro'
 import Subtitle from '@components/ui/Subtitle.astro'
-
+import '@phosphor-icons/web/duotone'
 ---
 <Layout title='Página do Teseu - Contato'>
   <div class="flex flex-col px-8 py-4 md:px-16 xl:px-[20rem] min-h-[calc(100vh-13rem)]">
     <Title title='Contato' />
     <Subtitle title='Envie uma mensagem.' />
-    
+    <form action="https://formspree.io/f/meqpdowv" method="POST" name="sentMessage" id="contactForm">
+       <input type="hidden" name="origem" value="teseu-github">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div class="input text-xl leading-10 h-20 text-info">
+          <i class="ph-duotone ph-user-circle text-4xl text-primary"></i>
+          <input class="bg-base-100" name="nome" required type="text" placeholder="Nome *" />
+        </div>
+        <div class="input text-xl leading-10 h-20 text-info">
+          <i class="ph-duotone ph-envelope text-4xl text-primary"></i>
+          <input class="bg-base-100" name="email" required type="email" placeholder="E-mail *" />
+        </div>
+        <div class="input text-xl leading-10 h-20 text-info">
+          <i class="ph-duotone ph-phone text-4xl text-primary"></i>
+          <input class="bg-base-100" name="telefone" type="telephone" placeholder="Telefone" />
+        </div>
+      </div>
+      <div class="mt-8">
+        <div class="input text-xl leading-10 h-40 text-info">
+          <i class="ph-duotone ph-chat-centered-text text-4xl text-primary"></i>
+          <textarea class="bg-base-100 w-full" name="nome" required type="textarea" placeholder="Mensagem *" />
+        </div>
+      </div>
+      <div class="mt-8">
+        <button class="btn btn-primary hover:btn-outline px-14">
+          <i class="ph-duotone ph-paper-plane-tilt text-4xl"></i>
+          <p class="text-xl">Enviar</p>
+        </button>
+      </div>
+    </form>    
   </div>
 </Layout>
+
+<style>
+.input {
+  @apply flex items-center border border-info gap-4;
+}
+input::placeholder,
+textarea::placeholder {
+  @apply text-info;
+}
+</style>
 
