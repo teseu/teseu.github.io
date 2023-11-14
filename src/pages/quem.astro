@@ -7,6 +7,7 @@ import Card from '@components/cards/quem.astro'
 import Lud from '@assets/img/quem/lud.jpg'
 import Teseu from '@assets/img/quem/teseu-profile.png'
 import Tulio from '@assets/img/quem/tulio.jpg'
+import '@phosphor-icons/web/duotone'
 ---
 <Layout title='Página do Teseu - Quem'>
   <div class="flex flex-col px-8 py-4 md:px-16 xl:px-[20rem] min-h-[calc(100vh-13rem)]">
@@ -20,14 +21,21 @@ import Tulio from '@assets/img/quem/tulio.jpg'
           <div class="badge badge-ghost">Segurança</div>
           <div class="badge badge-secondary">Confusão</div>
         </div>
-        <a slot='redes' href="https://www.facebook.com/ludmilla.bizzottopetrin" target="_blank">ícone</a>
+        <a slot='redes' href="https://www.facebook.com/ludmilla.bizzottopetrin" target="_blank">
+          <i class="ph-duotone ph-facebook-logo text-4xl text-primary"></i>
+        </a>
       </Card>
       <Card nome='Teseu' papel='🖥️ Querendo ser coder'>
         <Image src={Teseu} alt='imagem do Teseu' slot='img' class="aspect-square object-cover object-[0_-2rem] max-h-[19rem] rounded-b-none brightness-110" />
         <div slot='badge' class='flex gap-4'>
           <div class="badge badge-info">Em desenvolvimento</div>
         </div>
-        <a slot='redes' href="https://www.facebook.com/ludmilla.bizzottopetrin" target="_blank">ícone</a>
+        <a slot='redes' href="http://github.com/tuliomac" target="_blank">
+          <i class="ph-duotone ph-github-logo text-4xl text-primary"></i>
+        </a>
+        <a slot='redes' href="http://gitlab.com/teseu" target="_blank">
+          <i class="ph-duotone ph-gitlab-logo text-4xl text-primary"></i>
+        </a>
       </Card>
       <Card nome='Tulio Macedo' papel='Eu e Helena ❤️'>
         <Image src={Tulio} alt='foto do Tulio com Helena' slot='img' class="aspect-square max-h-[19rem] rounded-b-none brightness-110" />
@@ -35,7 +43,12 @@ import Tulio from '@assets/img/quem/tulio.jpg'
           <div class="badge badge-accent">Pai</div>
           <div class="badge badge-info">Em desenvolvimento</div>
         </div>
-        <a slot='redes' href="https://www.facebook.com/ludmilla.bizzottopetrin" target="_blank">ícone</a>
+        <a slot='redes' href="https://twitter.com/tuliomac" target="_blank">
+          <i class="ph-duotone ph-twitter-logo text-4xl text-primary"></i>
+        </a>
+        <a slot='redes' href="https://teseu.wordpress.org/" target="_blank">
+          <i class="ph-duotone ph-newspaper-clipping text-4xl text-primary"></i>
+        </a>
       </Card>
     </div>
   </div>
