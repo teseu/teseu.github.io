@@ -51,8 +51,8 @@ export default {
         },
       },
     ],
-    // themes: ['dark', 'corporate', 'night'],
-    darkTheme: 'dark', // name of one of the included themes for dark mode
+    // themes: ['business', 'emerald', 'night'],
+    darkTheme: 'business', // name of one of the included themes for dark mode
     base: true,
     utils: true,
   },
