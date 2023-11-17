@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets'
 import Theme from '@components/ThemeSwitch.astro'
-import Layout from '../layouts/LayoutCard.astro'
+import Layout from '../../layouts/LayoutCard.astro'
 import Title from '@components/ui/Title.astro'
 import Subtitle from '@components/ui/Subtitle.astro'
 import Social from '@components/Socialmedia.astro'
@@ -14,20 +14,20 @@ import Tulio from '@assets/img/quem/tulio-profile.png'
     <Theme />
     <div class="flex justify-center gap-8 text-5xl mb-8 w-full md:w-max transition-all duration-300">
       <div class="toggle-language">
-        🇧🇷
-        <span id="ptbr" class="active"></span>
+        <a href="/card">  🇧🇷
+          <span id="ptbr"></span>
+        </a>
       </div>
       <div class="toggle-language">
-        <a href="/en/card"> 🇺🇸
-          <span id="en"></span>
-        </a>
+        🇺🇸
+        <span id="en" class="active"></span>
       </div>
     </div>
   </div>
   <Title title='Tulio Macedo' />
-    <Subtitle title='Desenvolvedor Web, entusiasta do Software Livre, usuário Fedora' />
+    <Subtitle title='Web Developer, Free Software enthusiast, Fedora user' />
   <div class="flex justify-center p-8">
-    <Image src={Tulio} alt="foto do Tulio" class="w-48 h-48 rounded-full object-cover object-top" />
+    <Image src={Tulio} alt="Tulio's photo" class="w-48 h-48 rounded-full object-cover object-top" />
   </div>
   <Social />
 </Layout>
