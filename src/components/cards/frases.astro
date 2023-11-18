@@ -3,11 +3,11 @@ const { title } = Astro.props
 ---
 
 <div class="card">
-  <div class="relative flex flex-col break-words w-full h-full mb-6 shadow-lg rounded-lg bg-info-300 overflow-hidden">
+  <div class="relative flex flex-col break-words w-full h-full mb-6 shadow-lg rounded-lg bg-base-100 overflow-hidden">
      <slot name="img" />
-     <blockquote class="relative p-8 mb-4 text-info-1050">          
-       <h4 class="text-xl font-bold">{title}</h4>
-       <p class="text-md font-normal mt-2">
+     <blockquote class="relative p-8 mb-4 text-base-content">          
+       <h4 class="text-2xl font-bold">{title}</h4>
+       <p class="text-lg font-normal mt-2">
          <slot />
        </p>
     </blockquote>

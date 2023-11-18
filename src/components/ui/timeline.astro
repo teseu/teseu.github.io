@@ -5,9 +5,9 @@ const { lado, data, titulo, descricao } = Astro.props
   <div class:list={["mt-8 mb-32 flex justify-between items-center relative w-full py-8 grayscale-[50%] brightness-75 scale-95 hover:grayscale-0 hover:brightness-105 hover:scale-105 rounded-2xl hover:has-shadow transition-all duration-300", lado ]}>
     <div class="order-1 w-3/12"></div>
     <div class="order-1 w-5/12 px-4 py-4">
-      <p class="mb-3 text-base">{ data }</p>
-      <h4 class="mb-3 font-bold text-lg md:text-2xl">{ titulo }</h4>
-      <p class="text-sm md:text-base leading-snug text-bw-80 text-opacity-100">
+      <p class="mb-3 text-xl">{ data }</p>
+      <h4 class="mb-3 font-bold text-xl md:text-2xl">{ titulo }</h4>
+      <p class="text-base md:text-xl leading-snug text-bw-80 text-opacity-100">
         { descricao }
       </p>
     </div>

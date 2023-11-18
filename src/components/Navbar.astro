@@ -14,18 +14,18 @@ import Theme from '@components/ThemeSwitch.astro'
       </div>
       <div class="flex px-2 mx-2">
         <a href="/">
-          <div class="w-40 h-16 logo"></div>
+          <div class="w-40 h-16 logo bg-no-repeat bg-contain"></div>
         </a>
       </div>
       <div class="hidden xl:flex justify-between w-full">
         <Theme flexCol="" />
         <ul class="menu menu-horizontal">
           <!-- Navbar menu content here -->
-          <li><a href="/frases" class="text-primary text-lg font-semibold">Frases</a></li>
-          <li><a href="/lembrancas" class="text-primary text-lg font-semibold">Lembranças</a></li>
-          <li><a href="/sobre" class="text-primary text-lg font-semibold">Sobre</a></li>
-          <li><a href="/quem" class="text-primary text-lg font-semibold">Quem</a></li>
-          <li><a href="/contato" class="text-primary text-lg font-semibold">Contato</a></li>
+          <li><a href="/frases" class="text-primary text-xl font-semibold">Frases</a></li>
+          <li><a href="/lembrancas" class="text-primary text-xl font-semibold">Lembranças</a></li>
+          <li><a href="/sobre" class="text-primary text-xl font-semibold">Sobre</a></li>
+          <li><a href="/quem" class="text-primary text-xl font-semibold">Quem</a></li>
+          <li><a href="/contato" class="text-primary text-xl font-semibold">Contato</a></li>
         </ul>
       </div>
     </div>
@@ -35,22 +35,17 @@ import Theme from '@components/ThemeSwitch.astro'
     <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
     <ul class="menu p-4 w-80 min-h-full bg-base-200">
       <div class="py-4">
-        <div class="text-primary text-lg font-semibold px-4 pb-4">Tema</div>
+        <div class="text-primary text-xl font-semibold px-4 pb-4">Tema</div>
         <Theme flexCol="flex-col" />
       </div>
       <!-- Sidebar content here -->
-      <li><a href="/" class="text-primary text-lg font-semibold">Home</a></li>
-      <li><a href="/frases" class="text-primary text-lg font-semibold">Frases</a></li>
-      <li><a href="/lembrancas" class="text-primary text-lg font-semibold">Lembranças</a></li>
-      <li><a href="/sobre" class="text-primary text-lg font-semibold">Sobre</a></li>
-      <li><a href="/quem" class="text-primary text-lg font-semibold">Quem</a></li>
-      <li><a href="/contato" class="text-primary text-lg font-semibold">Contato</a></li>
+      <li><a href="/" class="text-primary text-xl font-semibold">Home</a></li>
+      <li><a href="/frases" class="text-primary text-xl font-semibold">Frases</a></li>
+      <li><a href="/lembrancas" class="text-primary text-xl font-semibold">Lembranças</a></li>
+      <li><a href="/sobre" class="text-primary text-xl font-semibold">Sobre</a></li>
+      <li><a href="/quem" class="text-primary text-xl font-semibold">Quem</a></li>
+      <li><a href="/contato" class="text-primary text-xl font-semibold">Contato</a></li>
     </ul>
   </div>
 </div>
-<style>
-.logo {
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-</style>
+
