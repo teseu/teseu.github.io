@@ -1,8 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro'
-import Card from '@components/Card.astro'
 import { Image } from 'astro:assets'
 import Teseu from '@assets/img/teseu.png'
+import lightBG from '@assets/img/F26-day.png'
+import darkBG from '@assets/img/F26-night.png'
 ---
 
 <Layout title="Página do Teseu">
@@ -19,5 +20,15 @@ import Teseu from '@assets/img/teseu.png'
 </Layout>
 
 <style>
- 
+ [data-theme="emerald"] .hero {
+  background-image: url({lightBG});
+}
+
+[data-theme="business"] .hero {
+  background-image: url({darkBG});
+}
+
+[data-theme="night"] .hero {
+  background-image: url({darkBG});
+}
 </style>
