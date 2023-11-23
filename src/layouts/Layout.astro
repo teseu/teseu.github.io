@@ -15,7 +15,6 @@ const { title } = Astro.props;
 		<meta name="description" content="Página do Teseu" />
 		<meta name="viewport" content="width=device-width initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-		<link rel="stylesheet" href="src/css/style.css">
 		<meta name="generator" content={Astro.generator} />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,10 +32,50 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	html {
-		font-family:
-		Barlow,
-		Raleway,
-		sans-serif;
-	}
+	[data-theme="emerald"] .logo {
+  background-image: url("../assets/img/teseu-logo.png");
+}
+
+[data-theme="business"] .logo {
+  background-image: url("../assets/img/teseu-logo-clara.png");
+}
+
+[data-theme="night"] .logo {
+  background-image: url("../assets/img/teseu-logo-clara.png");
+}
+
+[data-theme="emerald"] .hero {
+  background-image: url("../assets/img/F26-day.png");
+}
+
+[data-theme="business"] .hero {
+  background-image: url("../assets/img/F26-night.png");
+}
+
+[data-theme="night"] .hero {
+  background-image: url("../assets/img/F26-night.png");
+}
+
+:root {
+  --accent: 136, 58, 234;
+  --accent-light: 224, 204, 250;
+  --accent-dark: 49, 10, 101;
+  --accent-gradient: linear-gradient(
+    45deg,
+    rgb(var(--accent)),
+    rgb(var(--accent-light)) 30%,
+    white 60%
+  );
+}
+
+html {
+	font-family:
+	Barlow,
+	Raleway,
+	sans-serif;
+}
+body {
+  font-family: inherit;
+}
+
 </style>
