@@ -78,4 +78,18 @@ body {
   font-family: inherit;
 }
 
+.link {
+	color: hsl(var(--s));
+	text-decoration: none;
+}
+
+.link:hover {
+	cursor: pointer;
+    background-color: hsl(var(--bc) / 0.1);
+    --tw-text-opacity: 1;
+    color: hsl(var(--bc) / var(--tw-text-opacity));
+    outline: .3rem solid transparent;
+    outline-offset: .3rem;
+}
+
 </style>
