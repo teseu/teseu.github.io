@@ -17,6 +17,7 @@ import web from '@assets/img/timeline/web.jpg'
 import working from '@assets/img/timeline/working.jpg'
 import www from '@assets/img/timeline/www.jpg'
 import astro from '@assets/img/timeline/astro.svg'
+import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
 ---
 <Layout title='Página do Teseu - Sobre'>
   <div class="flex flex-col px-8 py-4 md:px-36 xl:px-[14rem] min-h-[calc(100vh-13rem)]">
@@ -145,7 +146,7 @@ import astro from '@assets/img/timeline/astro.svg'
                   <Image 
                     src={web} 
                     alt='imagem 3D de diversas páginas web'
-                    class='rounded-[2rem] relative right'
+                    class='rounded-[1rem] relative right w-80'
                     slot='img'
                   />
                 </Timeline>
@@ -158,7 +159,7 @@ import astro from '@assets/img/timeline/astro.svg'
                   <Image 
                     src={projects} 
                     alt='vários monitores com perojetos coloridos'
-                    class='rounded-[2rem] relative left'
+                    class='rounded-[1rem] relative left w-80'
                     slot='img'
                   />
                 </Timeline>
@@ -171,7 +172,7 @@ import astro from '@assets/img/timeline/astro.svg'
                   <Image 
                     src={vue} 
                     alt='logo do VueJS'
-                    class='rounded-[2rem] relative right'
+                    class='rounded-[1rem] relative right'
                     slot='img'
                   />
                 </Timeline>
@@ -198,6 +199,32 @@ import astro from '@assets/img/timeline/astro.svg'
                     src={astro} 
                     alt='logo do Astro'
                     class='rounded-[2rem] relative right'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='left'
+                  data='Agosto 2023'
+                  titulo='Agora vai'
+                  descricao='Página refeita com VueJS, só para em poucos meses mais uma vez, com Astro.'
+                  >
+                  <Image 
+                    src={astro} 
+                    alt='logo do Astro'
+                    class='rounded-[2rem] relative right'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='right'
+                  data='Janeiro 2024'
+                  titulo='Ano novo, página nova'
+                  descricao='Não exatamente a página, mas apenas mais uma (duas na verdade), a página /now'
+                  >
+                  <Image 
+                    src={newYear} 
+                    alt='imagem com ano 2024 com colorida e com vários blocos'
+                    class='rounded-[2rem] relative right w-80'
                     slot='img'
                   />
                 </Timeline>
