@@ -18,6 +18,10 @@
   background-image: url("../assets/img/F26-night.png");
 }
 
+[data-theme="dark"] .hero {
+  background-image: url("../assets/img/F26-night.png");
+}
+
 [data-theme="night"] .hero {
   background-image: url("../assets/img/F26-night.png");
 }
