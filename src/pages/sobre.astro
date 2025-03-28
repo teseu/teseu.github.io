@@ -1,0 +1,241 @@
+---
+import { Image } from 'astro:assets'
+import Layout from '../layouts/Layout.astro'
+import Title from '@components/ui/Title.astro'
+import Subtitle from '@components/ui/Subtitle.astro'
+import Teseu from '@assets/img/teseu.png'
+import Timeline from '@components/ui/timeline.astro'
+import landscape from '@assets/img/timeline/landscape.jpg'
+import biPlane from '@assets/img/timeline/bi-plane.jpg'
+import bug from '@assets/img/timeline/bug-pc.jpg'
+import linkedHands from '@assets/img/timeline/linked-hands.jpg'
+import neovide from '@assets/img/timeline/neovide.png'
+import projects from '@assets/img/timeline/projects.jpg'
+import test from '@assets/img/timeline/test.jpg'
+import vue from '@assets/img/timeline/vue.svg'
+import web from '@assets/img/timeline/web.jpg'
+import working from '@assets/img/timeline/working.jpg'
+import www from '@assets/img/timeline/www.jpg'
+import astro from '@assets/img/timeline/astro.svg'
+import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
+---
+<Layout title='Página do Teseu - Sobre'>
+  <div class="flex flex-col px-8 py-4 md:px-36 xl:px-[14rem] min-h-[calc(100vh-13rem)]">
+    <Title title='Timeline' />
+    <Subtitle title='Um pequeno resumo.' />
+    <section>
+      <div class="text-lg mt-0 md:-mt-12 pb-8">
+        <div class="container mx-auto flex flex-col items-start lg:flex-row mb-8 md:mb-16">
+          <div class="flex flex-col w-full relative lg:sticky lg:top-36 lg:w-1/3 mt-2 md:mt-12 pr-8">
+            <p class="ml-2 uppercase tracking-loose">Processo contínuo</p>
+            <p class="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">Uma timeline da página e da vida</p>
+            <p class="text-base md:text-xl mb-4">
+              Um pequeno resumo sobre a evolução do espaço como um todo, desde quando começou e uma estimativa de para onde vai.
+            </p>
+            <p class="text-base md:text-xl mb-4">
+              Algumas mudanças de rumo, minhas não só da página, carreira, enfim, coisas.
+            </p>
+            <div 
+              class="bg-transparent mr-auto cursor-default hover:bg-secondary text-secondary hover:text-secondary-content rounded shadow hover:shadow-lg py-2 px-4 border border-secondary hover:border-transparent">
+              Veja agora</div>
+          </div>
+          <div class="ml-0 md:ml-12 lg:w-2/3 sticky">
+            <div class="container mx-auto w-full h-full">
+              <div class="relative wrap overflow-hidden px-8 py-10 h-full">
+                <div class="border-sky-700 dark:border-sky-400 absolute h-full border"
+                  style="right: 50%; border-radius: 1%;"></div>
+                <div class="border-sky-700 dark:border-sky-400 absolute h-full border"
+                  style="left: 50%; border-radius: 1%;"></div>
+                  <Timeline 
+                  lado='left'
+                  data='2013 - 2014'
+                  titulo='Criação sem muita noção'
+                  descricao='Sem saber para que servia sequer os repositórios, ou mesmo o próprio git, mas logo comecei a pesquisar!'
+                  >
+                  <Image 
+                    src={landscape} 
+                    alt='pôr do sol com água é montanhas ao fundo e um pássaro voando'
+                    class='rounded-[2rem] relative left'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='right'
+                  data='Fevereiro 2014'
+                  titulo='Afinal um pull request'
+                  descricao='Começando por um projeto em conjunto, começando a usar para contribuir em projetos alheios e seguindo com meus próprios em pouco tempo, desde então com pouca regularidade, devagar e sempre.'
+                  >
+                  <Image 
+                    src={biPlane} 
+                    alt='avião bi-plano antigo em vôo'
+                    class='rounded-[2rem] relative right'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='left'
+                  data='Junho 2014'
+                  titulo='Começando a fazer alguma coisa'
+                  descricao='Continuando a contribuir no projeto anterior e começando os meus, com códigos de cursos de várias fontes, mas centralizando aqui para ter maior controle.'
+                  >
+                  <Image 
+                    src={bug} 
+                    alt='brinquedo de uma lagarta andando sobre um teclado'
+                    class='rounded-[2rem] relative left'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='right'
+                  data='Março 2015'
+                  titulo='Essa página'
+                  descricao='Após um período de inatividade, voltei a trabalhar em algum código e também a construir a primeira versão dessa página!'
+                  >
+                  <Image 
+                    src={www} 
+                    alt='letras www pretas como objetos 3D em fundo branco'
+                    class='rounded-[2rem] relative right'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='left'
+                  data='Maio 2016'
+                  titulo='Incluindo outros projetos'
+                  descricao='Comecei a incluir outros projetos nos meus repositórios, como algumas das contribuições que fazia para o projeto de tradução do LibreOffice para o português Brasileiro!'
+                  >
+                  <Image 
+                    src={working} 
+                    alt='escultura mostrando trabalhadores construindo'
+                    class='rounded-[2rem] relative left'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='right'
+                  data='Novembro 2016'
+                  titulo='Iniciando novas colaborações'
+                  descricao='Após um período sem muitos commits, um amigo me convidou a contribuir em um projeto baseado em serviços.'
+                  >
+                  <Image 
+                    src={linkedHands} 
+                    alt='várias mãos interligadas, mostrando cooperação'
+                    class='rounded-[2rem] relative right'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='left'
+                  data='Janeiro 2017'
+                  titulo='Projetos de teste'
+                  descricao='Iniciando com projetos de testes automatizados, minha realidade há alguns anos, mas apenas no trabalho, nada em repositórios independentes até agora!'
+                  >
+                  <Image 
+                    src={test} 
+                    alt='boneco de teste de colisões'
+                    class='rounded-[2rem] relative left'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='right'
+                  data='2018 - 2019'
+                  titulo='De volta às interfaces'
+                  descricao='Trabalhando de novo com interfaces, ainda sem prática, sem projetos melhores do que a versão anterior dessa mesma página, mas seguindo.'
+                  >
+                  <Image 
+                    src={web} 
+                    alt='imagem 3D de diversas páginas web'
+                    class='rounded-[1rem] relative right w-80'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='left'
+                  data='Janeiro 2020'
+                  titulo='Muitos projetos'
+                  descricao='Criando muitos projetos, principalmente por conta do trabalho, mas nem sempre (muitos em outros serviços de git, como GitLab).'
+                  >
+                  <Image 
+                    src={projects} 
+                    alt='vários monitores com perojetos coloridos'
+                    class='rounded-[1rem] relative left w-80'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='right'
+                  data='Julho 2020'
+                  titulo='Novas tecnologias'
+                  descricao='Aprendendo e testando muitas tecnologias novas, mas nesse ponto decidi focar em Vuejs, ainda continuo.'
+                  >
+                  <Image 
+                    src={vue} 
+                    alt='logo do VueJS'
+                    class='rounded-[1rem] relative right'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='left'
+                  data='Setembro 2021'
+                  titulo='Mais retornos'
+                  descricao='Várias novas coisas, usando muito mais o terminal e ferramentas associadas.'
+                  >
+                  <Image 
+                    src={neovide} 
+                    alt='tela de terminal'
+                    class='rounded-[2rem] relative left w-80 aspect-video'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='right'
+                  data='Julho 2022'
+                  titulo='Mais opções de framework'
+                  descricao='Usando mais opções de frontend, visando mais velocidade de construção de interfaces'
+                  >
+                  <Image 
+                    src={astro} 
+                    alt='logo do Astro'
+                    class='rounded-[2rem] relative right'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='left'
+                  data='Agosto 2023'
+                  titulo='Agora vai'
+                  descricao='Página refeita com VueJS, só para em poucos meses mais uma vez, com Astro.'
+                  >
+                  <Image 
+                    src={astro} 
+                    alt='logo do Astro'
+                    class='rounded-[2rem] relative right'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='right'
+                  data='Janeiro 2024'
+                  titulo='Ano novo, página nova'
+                  descricao='Não exatamente a página, mas apenas mais uma (duas na verdade), a página /now'
+                  >
+                  <Image 
+                    src={newYear} 
+                    alt='imagem com ano 2024 com colorida e com vários blocos'
+                    class='rounded-[2rem] relative right w-80'
+                    slot='img'
+                  />
+                </Timeline>
+              </div>
+              <Image class="w-1/3 mx-auto -mt-6 md:-mt-6 relative z-10"
+                src={Teseu} alt="Avatar do Teseu" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</Layout>
+

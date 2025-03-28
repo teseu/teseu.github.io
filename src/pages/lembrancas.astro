@@ -1,0 +1,116 @@
+---
+import { Image } from 'astro:assets'
+import gravida from '@assets/img/lembrancas/lud-gravida.jpg'
+import entrada from '@assets/img/lembrancas/entrada-parto.jpg'
+import maternidade from '@assets/img/lembrancas/helena-maternidade.jpg'
+import helena1 from '@assets/img/lembrancas/helena-eu.jpg'
+import helena2 from '@assets/img/lembrancas/helena-eu-2.jpg'
+import helena3 from '@assets/img/lembrancas/helena-arvore.jpg'
+import selfie from '@assets/img/lembrancas/nos-selfie.jpg'
+import selfie2 from '@assets/img/lembrancas/nos-selfie-2.jpg'
+import charrete from '@assets/img/lembrancas/charrete.jpg'
+import anoNovo from '@assets/img/lembrancas/ano-novo2020.png'
+import trem from '@assets/img/lembrancas/trem-fantasma.jpg'
+import pais from '@assets/img/lembrancas/pais.jpg'
+import Layout from '../layouts/Layout.astro'
+import Title from '@components/ui/Title.astro'
+import Subtitle from '@components/ui/Subtitle.astro'
+import Galeria from '@components/cards/galeria.astro'
+
+---
+
+<Layout title='Página do Teseu - Lembranças'>
+  <div class="flex flex-col px-8 py-4 md:px-36 xl:px-[14rem] min-h-[calc(100vh-13rem)]">
+    <Title title='Lembranças' />
+    <Subtitle title='Por conta das lembranças colocadas aqui terei mais motivos para continuar com os projetos.' />
+    <div class="py-6 sm:py-8 lg:py-12">
+      <div class="mx-auto max-w-screen-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-2 grid-flow-col gap-4 md:gap-6 xl:gap-8 auto-rows-[minmax(18rem,_1fr)]">
+          <Galeria 
+          link="#" 
+          classLink="col-start-1 row-start-1 row-span-2"
+          caption="Gravidez">
+          <Image src={gravida} alt='Lud grávida' slot='img' class="img object-center" />
+        </Galeria>
+          <Galeria 
+          link="#" 
+          classLink="col-start-1 lg:col-start-2 row-start-3 lg:row-start-1 row-span-2"
+          caption="Dia do parto">
+          <Image src={entrada} alt='Lud e Tulio na entrada do centro cirúrgico, antes do parto' slot='img' class="img object-top" />
+        </Galeria>
+          <Galeria 
+          link="#"
+          classLink="col-start-1 row-start-5 lg:row-start-3 row-span-2"
+          caption="Saindo da maternidade">
+          <Image src={maternidade} alt='Helena na saída da maternidade' slot='img' class="img object-center" />
+        </Galeria>
+          <Galeria 
+          link="#" 
+          classLink="col-start-1 lg:col-start-2 row-start-7 lg:row-start-3 row-span-2"
+          caption="Helena no colo do Túlio em frente à casa da avó">
+          <Image src={helena1} alt='Visitando vovó' slot='img' class="img object-center" />
+        </Galeria>
+          <Galeria 
+          link="#" 
+          classLink="col-start-1 row-start-9 lg:row-start-5 row-span-2"
+          caption="Selfie">
+          <Image src={helena2} alt='Selfie de Tulio com Helena no colo' slot='img' class="img object-top" />
+        </Galeria>
+          <Galeria 
+          link="#" 
+          classLink="col-start-1 lg:col-start-2 row-start-11 lg:row-start-5"
+          caption="Explorando o mundo">
+          <Image src={helena3} alt='Helena explorando o mundo, ao lado de um árvore' slot='img' class="img object-top" />
+        </Galeria>
+          <Galeria 
+          link="#" 
+          classLink="col-start-1 lg:col-start-2 row-start-12 lg:row-start-9"
+          caption="Na escola">
+          <Image src={selfie2} alt='Selfie com Lud, Helena e Tulio' slot='img' class="img object-center" />
+        </Galeria>
+          <Galeria 
+          link="#" 
+          classLink="col-start-1 row-start-13 lg:row-start-8"
+          caption="Saindo pra jantar">
+          <Image src={selfie} alt='Selfie com Lud, Helena e Tulio' slot='img' class="img object-top" />
+        </Galeria>
+          <Galeria 
+          link="#" 
+          classLink="col-start-1 lg:col-start-2 row-start-14 lg:row-start-7 row-span-2"
+          caption="Passeio de charrete">
+          <Image src={charrete} alt='Helena e Tulio em um passeio de charrete' slot='img' class="img object-bottom" />
+        </Galeria>
+          <Galeria 
+          link="#" 
+          classLink="col-start-1 row-start-16 lg:row-start-7"
+          caption="Ano novo de 2020">
+          <Image src={anoNovo} alt='Foto de comemoração do ano novo de 202 com Helena, Lud e Tulio' slot='img' class="img object-top" />
+        </Galeria>
+          <Galeria 
+          link="#" 
+          classLink="col-start-1 row-start-17 lg:row-start-9 row-span-2"
+          caption="Medo do trem fantasma">
+          <Image src={trem} alt='Selfie com Helena e Tulio na entrada do trem fantasma' slot='img' class="img object-bottom" />
+        </Galeria>
+          <Galeria 
+          link="#" 
+          classLink="col-start-1 lg:col-start-2 row-start-19 lg:row-start-9 row-span-2"
+          caption="Dia dos pais na escola">
+          <Image src={pais} alt='Helena entregando a Tulio presente do dia dos pais' slot='img' class="img object-top" />
+        </Galeria>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+
+.img {
+        @apply absolute inset-0 h-full w-full object-cover transition duration-200 saturate-50 hover:saturate-100 hover:scale-110;
+    }
+    
+    .img-div {
+        @apply pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50;
+    }
+</style>

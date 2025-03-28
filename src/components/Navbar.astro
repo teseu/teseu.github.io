@@ -1,0 +1,53 @@
+---
+import Theme from '@components/ThemeSwitch.astro'
+---
+
+<div class="drawer fixed z-10 bg-base-200/60">
+  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content flex flex-col w-full">
+    <!-- Navbar -->
+    <div class="w-full navbar justify-between px-8">
+      <div class="flex-none xl:hidden">
+        <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </label>
+      </div>
+      <div class="flex px-2 mx-2">
+        <a href="/">
+          <div class="w-40 h-16 logo bg-no-repeat bg-contain"></div>
+        </a>
+      </div>
+      <div class="hidden xl:flex justify-between w-full">
+        <Theme flexCol="" />
+        <ul class="menu menu-horizontal">
+          <!-- Navbar menu content here -->
+          <li><a href="/frases" class="text-primary text-xl font-semibold">Frases</a></li>
+          <li><a href="/lembrancas" class="text-primary text-xl font-semibold">Fotos</a></li>
+          <li><a href="/sobre" class="text-primary text-xl font-semibold">Sobre</a></li>
+          <li><a href="/quem" class="text-primary text-xl font-semibold">Quem</a></li>
+          <li><a href="/now" class="text-primary text-xl font-semibold">/Now</a></li>
+          <li><a href="/contato" class="text-primary text-xl font-semibold">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div class="drawer-side">
+    <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu p-4 w-80 min-h-full bg-base-200">
+      <div class="py-4">
+        <div class="text-primary text-xl font-semibold px-4 pb-4">Tema</div>
+        <Theme flexCol="flex-col" />
+      </div>
+      <!-- Sidebar content here -->
+      <li><a href="/" class="text-primary text-xl font-semibold">Home</a></li>
+      <li><a href="/frases" class="text-primary text-xl font-semibold">Frases</a></li>
+      <li><a href="/lembrancas" class="text-primary text-xl font-semibold">Fotos</a></li>
+      <li><a href="/sobre" class="text-primary text-xl font-semibold">Sobre</a></li>
+      <li><a href="/quem" class="text-primary text-xl font-semibold">Quem</a></li>
+      <li><a href="/now" class="text-primary text-xl font-semibold">/Now</a></li>
+      <li><a href="/contato" class="text-primary text-xl font-semibold">Contato</a></li>
+    </ul>
+  </div>
+</div>
+

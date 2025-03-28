@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Title from '@components/ui/Title.astro'
+import Subtitle from '@components/ui/Subtitle.astro'
+import '@phosphor-icons/web/duotone'
+
+const access_key = import.meta.env.VITE_ACCESS_KEY
+const action = import.meta.env.VITE_ACTION
+
+---
+<Layout title='Página do Teseu - Contato'>
+  <div class="flex flex-col px-8 py-4 md:px-36 xl:px-[14rem] min-h-[calc(100vh-13rem)]">
+    <Title title='Contato' />
+    <Subtitle title='Envie uma mensagem.' />
+    <form action={action} method="POST" name="sentMessage" id="contactForm">
+      <input type="hidden" name="access_key" value={access_key} />
+      <input type="hidden" name="subject" value="Nova mensagem do form de contato Página do Teseu" />
+      <input type="hidden" name="from_name" value="teseu.github.io">
+      <input type="hidden" name="redirect" value="https://teseu.github.io/thanks">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div class="input text-xl leading-10 h-20 text-info">
+          <i class="ph-duotone ph-user-circle text-5xl text-primary"></i>
+          <input class="bg-base-100" name="nome" required type="text" placeholder="Nome *" />
+        </div>
+        <div class="input text-xl leading-10 h-20 text-info">
+          <i class="ph-duotone ph-envelope text-5xl text-primary"></i>
+          <input class="bg-base-100" name="email" required type="email" placeholder="E-mail *" />
+        </div>
+        <div class="input text-xl leading-10 h-20 text-info">
+          <i class="ph-duotone ph-phone text-5xl text-primary"></i>
+          <input class="bg-base-100" name="telefone" type="tel" placeholder="Telefone" />
+        </div>
+      </div>
+      <div class="mt-8">
+        <div class="input text-xl leading-10 h-40 text-info">
+          <i class="ph-duotone ph-chat-centered-text text-5xl text-primary"></i>
+          <textarea class="bg-base-100 w-full" name="nome" required placeholder="Mensagem *" />
+        </div>
+      </div>
+      <div class="mt-8">
+        <button class="btn btn-primary hover:btn-outline px-14">
+          <i class="ph-duotone ph-paper-plane-tilt text-4xl text-base-100"></i>
+          <p class="text-2xl text-base-100">Enviar</p>
+        </button>
+      </div>
+    </form>    
+  </div>
+</Layout>
+
+<style>
+.input {
+  @apply flex items-center border border-info gap-4;
+}
+input::placeholder,
+textarea::placeholder {
+  @apply text-info text-3xl;
+}
+</style>
+

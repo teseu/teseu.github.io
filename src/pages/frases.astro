@@ -1,0 +1,41 @@
+---
+import { Image } from 'astro:assets'
+import Layout from '../layouts/Layout.astro'
+import Title from '@components/ui/Title.astro'
+import Subtitle from '@components/ui/Subtitle.astro'
+import Card from '@components/cards/frases.astro'
+import teseu from '@assets/img/teseu.png'
+import Vader from '@assets/img/frases/vader.png'
+import Einstein from '@assets/img/frases/einstein.png'
+import Karlton from '@assets/img/frases/karlton.jpg'
+---
+<Layout title='Página do Teseu - Frases'>
+  <div class="flex flex-col px-8 py-4 md:px-36 xl:px-[14rem] min-h-[calc(100vh-13rem)]">
+    <Title title='Frases' />
+    <Subtitle title='Algumas coisas que uso para pensar.' />
+    <div class="flex flex-wrap justify-between gap-4 items-strech">
+      <Card title='Teseu'>
+        <Image src={teseu} alt='teseu avatar' slot='img' class="w-full bg-neutral align-middle rounded-t-lg rounded-b-none img-card" />
+        A chave do sucesso é o total despreparo.
+      </Card>
+      <Card title='Darth Vader'>
+        <Image src={Vader} alt='foto do Darth Vader' slot='img' class="w-full bg-neutral align-middle rounded-t-lg rounded-b-none img-card" />
+         Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force.
+      </Card>
+      <Card title='Albert Einstein'>
+        <Image src={Einstein} alt='foto do Albert Einstein' slot='img' class="w-full bg-neutral align-middle rounded-t-lg rounded-b-none img-card" />
+         The true definition of madness is repeating the same action, over and over, hoping for a different result.
+      </Card>
+      <Card title='Phil Karlton'>
+        <Image src={Karlton} alt='foto do Phil Karlton' slot='img' class="w-full bg-neutral align-middle rounded-t-lg rounded-b-none img-card" />
+        There are only two hard things in Computer Science: cache invalidation and naming things.
+      </Card>
+    </div>
+  </div>
+</Layout>
+
+<style>
+.img-card {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+</style>

@@ -1,0 +1,43 @@
+[data-theme="emerald"] .logo {
+  background-image: url("../assets/img/teseu-logo.png");
+}
+
+[data-theme="business"] .logo {
+  background-image: url("../assets/img/teseu-logo-clara.png");
+}
+
+[data-theme="night"] .logo {
+  background-image: url("../assets/img/teseu-logo-clara.png");
+}
+
+[data-theme="emerald"] .hero {
+  background-image: url("../assets/img/F26-day.png");
+}
+
+[data-theme="business"] .hero {
+  background-image: url("../assets/img/F26-night.png");
+}
+
+[data-theme="dark"] .hero {
+  background-image: url("../assets/img/F26-night.png");
+}
+
+[data-theme="night"] .hero {
+  background-image: url("../assets/img/F26-night.png");
+}
+
+:root {
+  --accent: 136, 58, 234;
+  --accent-light: 224, 204, 250;
+  --accent-dark: 49, 10, 101;
+  --accent-gradient: linear-gradient(
+    45deg,
+    rgb(var(--accent)),
+    rgb(var(--accent-light)) 30%,
+    white 60%
+  );
+}
+
+body {
+  font-family: inherit;
+}
