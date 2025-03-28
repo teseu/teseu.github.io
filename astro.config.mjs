@@ -4,7 +4,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astronaut.github.io',
+  site: 'https://teseu.github.io',
   experimental: {
     i18n: {
       defaultLocale: 'pt-br',
