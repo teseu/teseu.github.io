@@ -4,16 +4,13 @@ import Title from '@components/ui/Title.astro'
 import Subtitle from '@components/ui/Subtitle.astro'
 import '@phosphor-icons/web/duotone'
 
-const access_key = import.meta.env.VITE_ACCESS_KEY
-const action = import.meta.env.VITE_ACTION
-
 ---
 <Layout title='Página do Teseu - Contato'>
   <div class="flex flex-col px-8 py-4 md:px-36 xl:px-[14rem] min-h-[calc(100vh-13rem)]">
     <Title title='Contato' />
     <Subtitle title='Envie uma mensagem.' />
-    <form action={action} method="POST" name="sentMessage" id="contactForm">
-      <input type="hidden" name="access_key" value={access_key} />
+    <form action="https://api.web3forms.com/submit" method="POST" name="sentMessage" id="contactForm">
+      <input type="hidden" name="access_key" value=cd029d39-cb61-49e4-a6af-1d2d765eb6bb />
       <input type="hidden" name="subject" value="Nova mensagem do form de contato Página do Teseu" />
       <input type="hidden" name="from_name" value="teseu.github.io">
       <input type="hidden" name="redirect" value="https://teseu.github.io/thanks">
