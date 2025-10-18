@@ -1,4 +1,6 @@
 {% include css/bootstrap.min.css %}
 {% include css/agency.css %}
-{% include css/teseu.css %}
+{
+  % include styles/style.css %
+}
 {{ content }}
