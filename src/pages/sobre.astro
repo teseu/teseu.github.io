@@ -18,6 +18,7 @@ import working from '@assets/img/timeline/working.jpg'
 import www from '@assets/img/timeline/www.jpg'
 import astro from '@assets/img/timeline/astro.svg'
 import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
+import renovation from '@assets/img/timeline/house_in_midrenovation.jpg'
 ---
 <Layout title='Página do Teseu - Sobre'>
   <div class="flex flex-col px-8 py-4 md:px-36 xl:px-[14rem] min-h-[calc(100vh-13rem)]">
@@ -47,7 +48,7 @@ import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
                 <div class="border-sky-700 dark:border-sky-400 absolute h-full border"
                   style="left: 50%; border-radius: 1%;"></div>
                   <Timeline 
-                  lado='left'
+                  lado='flex-col sm:flex-row-reverse'
                   data='2013 - 2014'
                   titulo='Criação sem muita noção'
                   descricao='Sem saber para que servia sequer os repositórios, ou mesmo o próprio git, mas logo comecei a pesquisar!'
@@ -60,7 +61,7 @@ import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
                   />
                 </Timeline>
                 <Timeline 
-                  lado='right'
+                  lado='flex-col sm:flex-row'
                   data='Fevereiro 2014'
                   titulo='Afinal um pull request'
                   descricao='Começando por um projeto em conjunto, começando a usar para contribuir em projetos alheios e seguindo com meus próprios em pouco tempo, desde então com pouca regularidade, devagar e sempre.'
@@ -73,7 +74,7 @@ import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
                   />
                 </Timeline>
                 <Timeline 
-                  lado='left'
+                  lado='flex-col sm:flex-row-reverse'
                   data='Junho 2014'
                   titulo='Começando a fazer alguma coisa'
                   descricao='Continuando a contribuir no projeto anterior e começando os meus, com códigos de cursos de várias fontes, mas centralizando aqui para ter maior controle.'
@@ -86,7 +87,7 @@ import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
                   />
                 </Timeline>
                 <Timeline 
-                  lado='right'
+                  lado='flex-col sm:flex-row'
                   data='Março 2015'
                   titulo='Essa página'
                   descricao='Após um período de inatividade, voltei a trabalhar em algum código e também a construir a primeira versão dessa página!'
@@ -99,7 +100,7 @@ import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
                   />
                 </Timeline>
                 <Timeline 
-                  lado='left'
+                  lado='flex-col sm:flex-row-reverse'
                   data='Maio 2016'
                   titulo='Incluindo outros projetos'
                   descricao='Comecei a incluir outros projetos nos meus repositórios, como algumas das contribuições que fazia para o projeto de tradução do LibreOffice para o português Brasileiro!'
@@ -112,7 +113,7 @@ import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
                   />
                 </Timeline>
                 <Timeline 
-                  lado='right'
+                  lado='flex-col sm:flex-row'
                   data='Novembro 2016'
                   titulo='Iniciando novas colaborações'
                   descricao='Após um período sem muitos commits, um amigo me convidou a contribuir em um projeto baseado em serviços.'
@@ -125,7 +126,7 @@ import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
                   />
                 </Timeline>
                 <Timeline 
-                  lado='left'
+                  lado='flex-col sm:flex-row-reverse'
                   data='Janeiro 2017'
                   titulo='Projetos de teste'
                   descricao='Iniciando com projetos de testes automatizados, minha realidade há alguns anos, mas apenas no trabalho, nada em repositórios independentes até agora!'
@@ -138,7 +139,7 @@ import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
                   />
                 </Timeline>
                 <Timeline 
-                  lado='right'
+                  lado='flex-col sm:flex-row'
                   data='2018 - 2019'
                   titulo='De volta às interfaces'
                   descricao='Trabalhando de novo com interfaces, ainda sem prática, sem projetos melhores do que a versão anterior dessa mesma página, mas seguindo.'
@@ -151,7 +152,7 @@ import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
                   />
                 </Timeline>
                 <Timeline 
-                  lado='left'
+                  lado='flex-col sm:flex-row-reverse'
                   data='Janeiro 2020'
                   titulo='Muitos projetos'
                   descricao='Criando muitos projetos, principalmente por conta do trabalho, mas nem sempre (muitos em outros serviços de git, como GitLab).'
@@ -164,7 +165,7 @@ import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
                   />
                 </Timeline>
                 <Timeline 
-                  lado='right'
+                  lado='flex-col sm:flex-row'
                   data='Julho 2020'
                   titulo='Novas tecnologias'
                   descricao='Aprendendo e testando muitas tecnologias novas, mas nesse ponto decidi focar em Vuejs, ainda continuo.'
@@ -177,7 +178,7 @@ import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
                   />
                 </Timeline>
                 <Timeline 
-                  lado='left'
+                  lado='flex-col sm:flex-row-reverse'
                   data='Setembro 2021'
                   titulo='Mais retornos'
                   descricao='Várias novas coisas, usando muito mais o terminal e ferramentas associadas.'
@@ -190,7 +191,7 @@ import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
                   />
                 </Timeline>
                 <Timeline 
-                  lado='right'
+                  lado='flex-col sm:flex-row'
                   data='Julho 2022'
                   titulo='Mais opções de framework'
                   descricao='Usando mais opções de frontend, visando mais velocidade de construção de interfaces'
@@ -203,7 +204,7 @@ import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
                   />
                 </Timeline>
                 <Timeline 
-                  lado='left'
+                  lado='flex-col sm:flex-row-reverse'
                   data='Agosto 2023'
                   titulo='Agora vai'
                   descricao='Página refeita com VueJS, só para em poucos meses mais uma vez, com Astro.'
@@ -216,13 +217,26 @@ import newYear from '@assets/img/timeline/happy-new-year-2024.jpg'
                   />
                 </Timeline>
                 <Timeline 
-                  lado='right'
+                  lado='flex-col sm:flex-row'
                   data='Janeiro 2024'
                   titulo='Ano novo, página nova'
                   descricao='Não exatamente a página, mas apenas mais uma (duas na verdade), a página /now'
                   >
                   <Image 
                     src={newYear} 
+                    alt='imagem com ano 2024 com colorida e com vários blocos'
+                    class='rounded-[2rem] relative right w-80'
+                    slot='img'
+                  />
+                </Timeline>
+                <Timeline 
+                  lado='flex-col sm:flex-row-reverse'
+                  data='Outubro 2025'
+                  titulo='Igual reforma de casa'
+                  descricao='Uma atualização de uma página me fez rever a versão da maioria das bibliotecas, o que gerou alguns problemas interessantes, ou seja, quebrei tudo.'
+                  >
+                  <Image 
+                    src={renovation} 
                     alt='imagem com ano 2024 com colorida e com vários blocos'
                     class='rounded-[2rem] relative right w-80'
                     slot='img'
