@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "business";
+  default: false;
+  prefersdark: true;
+  color-scheme: dark;
+  
+}
+@plugin "daisyui/theme" {
+  name: "emerald";
+  default: false;
+  prefersdark: false;
+  color-scheme: light;
+  
+}
+@plugin "daisyui/theme" {
+  name: "night";
+  default: false;
+  prefersdark: true;
+  color-scheme: dark;
+  
+}
+
+
+[data-theme="emerald"] {
+  --color-primary:#007430;
+  --color-accent:#c44123;
+  --color-1: #f1f5f9;
+  --primary-dark: #001c9b;
+
+  .hero {
+  background-image: url("../assets/img/F26-day.png");
+}
+
+  .logo {
+  background-image: url("../assets/img/teseu-logo.png");
+}}
+
+[data-theme="business"] {
+  --color-primary:#008eff;
+  --color-1: #1f2937;
+  --primary-dark: #312e81;
+
+  .hero {
+  background-image: url("../assets/img/F26-night.png");
+}
+
+  .logo {
+  background-image: url("../assets/img/teseu-logo-clara.png");
+}}
+
+[data-theme="night"] {
+  --color-1: #1e293b;
+  --primary-dark: #004968;
+
+  .hero {
+  background-image: url("../assets/img/F26-night.png");
+}
+  .logo {
+  background-image: url("../assets/img/teseu-logo-clara.png");
+}}
+
+
+:root {
+  --accent: 136, 58, 234;
+  --accent-light: 224, 204, 250;
+  --accent-dark: 49, 10, 101;
+  --accent-gradient: linear-gradient(
+    45deg,
+    rgb(var(--accent)),
+    rgb(var(--accent-light)) 30%,
+    white 60%
+  );
+}
+
+body {
+  font-family: inherit;
+  .text-primary-dark {
+    color: var(--primary-dark);
+  }
+
+  .bg-primary-dark {
+    background-color: var(--primary-dark);
+  }
+
+  .text-color-1 {
+    color: var(--color-1);
+  }
+
+  .bg-color-1 {
+    background-color: var(--color-1);
+  }
+}
